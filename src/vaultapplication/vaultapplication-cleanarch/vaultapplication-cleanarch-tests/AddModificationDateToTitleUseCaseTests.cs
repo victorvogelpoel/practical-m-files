@@ -1,4 +1,5 @@
 ﻿using System;
+using FluentAssertions;
 using MFilesAPI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -115,6 +116,105 @@ namespace vaultapplication_cleanarch_tests
             objectRepositoryMock.Verify(m=>m.GetObjectTitle(objVer), Times.Once);
             objectRepositoryMock.Verify(m=>m.GetObjectLastModified(objVer), Times.Once);
             objectRepositoryMock.Verify(m=>m.UpdateObjectTitle(It.IsAny<ObjVer>(), It.IsAny<string>(), It.IsAny<int>()), Times.Never);
+        }
+
+
+        // --------------------------------------------------------------------------------------------------
+        // Tests with STUB
+
+        [DataTestMethod]
+        [DataRow("A document title")]
+        [DataRow("A")]
+        [DataRow("AB")]
+        [DataRow("ABC")]
+        [DataRow("ABCD")]
+        [DataRow("ABCDE")]
+        [DataRow("ABCDEF")]
+        [DataRow("ABCDEFG")]
+        [DataRow("ABCDEFGH")]
+        [DataRow("ABCDEFGHI")]
+        public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(string objectTitle)
+        {
+            var lastModified            = DateTime.Now;
+            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var objVer                  = new ObjVer();
+            var userId                  = 1;
+
+            var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
+
+            var objectRepository        = new ObjectRepositoryStub();
+            objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
+
+            // ACTION
+            var useCase = new AddModificationDateToTitleUseCase(objectRepository);
+            useCase.UpdateObjectTitle(objVer, userId);
+
+            // ASSERT
+            objectRepository.GetObjectTitle(objVer).Should().Be(expectedUpdatedTitle);
+        }
+
+
+        [TestMethod]
+        public void WhenTitleHasPriorDate_ExpectItReplacedByLastModifiedsDate2()
+        {
+            var objectTitle             = "A document title 1984-01-01"; // an old date
+            var lastModified            = DateTime.Now;
+            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var objVer                  = new ObjVer();
+            var userId                  = 1;
+
+            var expectedUpdatedTitle    = $"A document title {lastModified:yyyy-MM-dd}";
+
+            var objectRepository        = new ObjectRepositoryStub();
+            objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
+
+            var useCase = new AddModificationDateToTitleUseCase(objectRepository);
+            useCase.UpdateObjectTitle(objVer, userId);
+
+            // ASSERT
+            objectRepository.GetObjectTitle(objVer).Should().Be(expectedUpdatedTitle);
+        }
+
+
+        [TestMethod]
+        public void WhenTitleHasPriorDateWithTrailingSpaces_ExpectItReplacedByLastModifiedsDate2()
+        {
+            var objectTitle             = "A document title 1984-01-01 "; // an old date with trailing space
+            var lastModified            = DateTime.Now;
+            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var objVer                  = new ObjVer();
+            var userId                  = 1;
+
+            var expectedUpdatedTitle    = $"A document title {lastModified:yyyy-MM-dd}";
+
+            var objectRepository        = new ObjectRepositoryStub();
+            objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
+
+            var useCase = new AddModificationDateToTitleUseCase(objectRepository);
+            useCase.UpdateObjectTitle(objVer, userId);
+
+            // ASSERT
+            objectRepository.GetObjectTitle(objVer).Should().Be(expectedUpdatedTitle);
+        }
+
+
+        [TestMethod]
+        public void WhenTitleHasLastModifiedsDate_ExpectNoChangeToDateInTitle2()
+        {
+            var lastModified            = DateTime.Now;
+            var objectTitle             = $"A document title {lastModified:yyyy-MM-dd}";
+            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var objVer  = new ObjVer();
+            var userId                  = 1;
+
+            var objectRepository        = new ObjectRepositoryStub();
+            objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
+
+            var useCase = new AddModificationDateToTitleUseCase(objectRepository);
+            useCase.UpdateObjectTitle(objVer, userId);
+
+            // ASSERT
+            objectRepository.GetObjectTitle(objVer).Should().Be(objectTitle);
         }
     }
 }
