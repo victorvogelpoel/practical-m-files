@@ -1,8 +1,5 @@
 using System;
-using System.Diagnostics;
-using MFiles.VAF;
 using MFiles.VAF.Common;
-using MFiles.VAF.Configuration;
 using MFiles.VAF.Core;
 using MFilesAPI;
 using VaultApplicationCleanArchitecture.Application;
