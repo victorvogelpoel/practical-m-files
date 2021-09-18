@@ -36,7 +36,7 @@ namespace vaultapplication_cleanarch_tests
 
             var useCase = new AddModificationDateToTitleUseCase(objectRepositoryMock.Object);
             var objVer  = new ObjVer();
-            useCase.Execute(objVer, userId);
+            useCase.UpdateObjectTitle(objVer, userId);
 
             objectRepositoryMock.VerifyAll();
             objectRepositoryMock.Verify(m=>m.GetObjectTitle(objVer), Times.Once);
@@ -48,7 +48,7 @@ namespace vaultapplication_cleanarch_tests
         [TestMethod]
         public void WhenTitleHasPriorDate_ExpectItReplacedByLastModifiedsDate()
         {
-            var objectTitle             = "A document title 1984-01-01";
+            var objectTitle             = "A document title 1984-01-01"; // an old date
             var lastModified            = DateTime.Now;
             var lastModifiedUTC         = lastModified.ToUniversalTime();
             var userId                  = 1;
@@ -61,7 +61,32 @@ namespace vaultapplication_cleanarch_tests
 
             var useCase = new AddModificationDateToTitleUseCase(objectRepositoryMock.Object);
             var objVer  = new ObjVer();
-            useCase.Execute(objVer, userId);
+            useCase.UpdateObjectTitle(objVer, userId);
+
+            objectRepositoryMock.VerifyAll();
+            objectRepositoryMock.Verify(m=>m.GetObjectTitle(objVer), Times.Once);
+            objectRepositoryMock.Verify(m=>m.GetObjectLastModified(objVer), Times.Once);
+            objectRepositoryMock.Verify(m=>m.UpdateObjectTitle(objVer, expectedUpdatedTitle, userId));
+        }
+
+
+        [TestMethod]
+        public void WhenTitleHasPriorDateWithTrailingSpaces_ExpectItReplacedByLastModifiedsDate()
+        {
+            var objectTitle             = "A document title 1984-01-01 "; // an old date with trailing space
+            var lastModified            = DateTime.Now;
+            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var userId                  = 1;
+
+            var expectedUpdatedTitle    = $"A document title {lastModified:yyyy-MM-dd}";
+
+            var objectRepositoryMock = new Mock<IObjectRepository>();
+            objectRepositoryMock.Setup(m=>m.GetObjectTitle(It.IsAny<ObjVer>())).Returns(objectTitle);
+            objectRepositoryMock.Setup(m=>m.GetObjectLastModified(It.IsAny<ObjVer>())).Returns(lastModifiedUTC);
+
+            var useCase = new AddModificationDateToTitleUseCase(objectRepositoryMock.Object);
+            var objVer  = new ObjVer();
+            useCase.UpdateObjectTitle(objVer, userId);
 
             objectRepositoryMock.VerifyAll();
             objectRepositoryMock.Verify(m=>m.GetObjectTitle(objVer), Times.Once);
@@ -78,15 +103,13 @@ namespace vaultapplication_cleanarch_tests
             var lastModifiedUTC         = lastModified.ToUniversalTime();
             var userId                  = 1;
 
-            var expectedUpdatedTitle    = $"A document title {lastModified:yyyy-MM-dd}";
-
             var objectRepositoryMock = new Mock<IObjectRepository>();
             objectRepositoryMock.Setup(m=>m.GetObjectTitle(It.IsAny<ObjVer>())).Returns(objectTitle);
             objectRepositoryMock.Setup(m=>m.GetObjectLastModified(It.IsAny<ObjVer>())).Returns(lastModifiedUTC);
 
             var useCase = new AddModificationDateToTitleUseCase(objectRepositoryMock.Object);
             var objVer  = new ObjVer();
-            useCase.Execute(objVer, userId);
+            useCase.UpdateObjectTitle(objVer, userId);
 
             objectRepositoryMock.VerifyAll();
             objectRepositoryMock.Verify(m=>m.GetObjectTitle(objVer), Times.Once);

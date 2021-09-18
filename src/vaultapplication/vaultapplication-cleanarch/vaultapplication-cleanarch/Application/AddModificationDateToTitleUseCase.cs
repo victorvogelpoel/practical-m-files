@@ -18,13 +18,17 @@ namespace VaultApplicationCleanArchitecture.Application
             _objectRepository  = objectRepository;
         }
 
-
-        public void Execute(ObjVer objVer, int userID)
+        /// <summary>
+        /// Add or update the object's modification date to the object's title property.
+        /// </summary>
+        /// <param name="objVer">objVer of the object to update</param>
+        /// <param name="userID">ID of M-Files user to set as LastModifiedBy property (otherwise it will show "(M-Files Server)")</param>
+        public void UpdateObjectTitle(ObjVer objVer, int userID)
         {
-            var objectTitle = _objectRepository.GetObjectTitle(objVer);
-            var datePostFix = objectTitle.Length > 11 ? objectTitle.Substring(objectTitle.Length-10) : "";
+            var objectTitle     = _objectRepository.GetObjectTitle(objVer).TrimEnd();
+            var datePostFix     = objectTitle.Length > 11 ? objectTitle.Substring(objectTitle.Length-10) : "";
 
-            var objectModified = _objectRepository.GetObjectLastModified(objVer);
+            var objectModified  = _objectRepository.GetObjectLastModified(objVer);
 
             if (DateTime.TryParseExact(datePostFix, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, DateTimeStyles.AssumeLocal, out var date))
             {

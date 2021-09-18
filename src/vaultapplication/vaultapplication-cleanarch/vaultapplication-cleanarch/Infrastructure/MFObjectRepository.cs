@@ -31,7 +31,7 @@ namespace VaultApplicationCleanArchitecture.Infrastructure
 
         public void UpdateObjectTitle(ObjVer objVer, string updatedTitle, int lastModifiedByUserId)
         {
-            // Set the update title
+            // Set the update title propertyValue
             var updatedTitlePV = new PropertyValue
             {
                 PropertyDef = (int)MFBuiltInPropertyDef.MFBuiltInPropertyDefNameOrTitle
@@ -41,10 +41,10 @@ namespace VaultApplicationCleanArchitecture.Infrastructure
             _vault.ObjectPropertyOperations.SetProperty(objVer, updatedTitlePV);
 
             // Aaaand, reset the LastModifiedBy to the specified user (currentUser); otherwise the object will show "(M-Files Server)".
-            var lastModifiedBy = new TypedValue();
-            lastModifiedBy.SetValue(MFDataType.MFDatatypeLookup, lastModifiedByUserId);
+            var lastModifiedByValue = new TypedValue();
+            lastModifiedByValue.SetValue(MFDataType.MFDatatypeLookup, lastModifiedByUserId);
 
-            _vault.ObjectPropertyOperations.SetLastModificationInfoAdmin(objVer, UpdateLastModifiedBy:true, lastModifiedBy, UpdateLastModified: false, null);
+            _vault.ObjectPropertyOperations.SetLastModificationInfoAdmin(objVer, UpdateLastModifiedBy:true, lastModifiedByValue, UpdateLastModified: false, null);
         }
     }
 }

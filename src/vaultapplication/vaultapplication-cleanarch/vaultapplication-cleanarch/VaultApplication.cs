@@ -24,7 +24,7 @@ namespace VaultApplicationCleanArchitecture
             var vaultData   = new MFObjectRepository(env.Vault);
             var useCase     = new AddModificationDateToTitleUseCase(vaultData);
 
-            useCase.Execute(env.ObjVer, env.CurrentUserID);
+            useCase.UpdateObjectTitle(env.ObjVer, env.CurrentUserID);
         }
     }
 }
