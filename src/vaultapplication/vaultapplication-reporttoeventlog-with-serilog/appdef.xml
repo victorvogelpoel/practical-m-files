@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright 2021 Dramatic Development - Victor Vogelpoel
+-->
+<application
+			type="server-application"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
+  <guid>45472745-9d80-4b42-b092-463f3c38b6f1</guid>
+  <name>vaultapplication-reporttoeventlog-with-serilog</name>
+  <description>Sample Vault Application for demonstrating logging tp the EventLog using the SysUtils.ReportToEventLog through Serilog structured logging using the Serilog.Sinks.MFilesSysUtilsEventLog nuget package</description>
+  <publisher>Dramatic Development</publisher>
+  <version>0.2</version>
+  <copyright>Copyright 2021 Dramatic Development</copyright>
+  <required-mfiles-version>20.5.0.0</required-mfiles-version>
+  <multi-server-compatible>false</multi-server-compatible>
+  <extension-objects>
+    <extension-object>
+      <name>vaultapplication-reporttoeventlog-with-serilog</name>
+      <assembly>vaultapplication-reporttoeventlog-with-serilog.dll</assembly>
+      <class>VaultapplicationReportToEventlogWithSerilog.VaultApplication</class>
+      <installation-method>Install</installation-method>
+      <uninstallation-method>Uninstall</uninstallation-method>
+      <initialization-method>Initialize</initialization-method>
+      <uninitialization-method>Uninitialize</uninitialization-method>
+      <start-operations-method>StartOperations</start-operations-method>
+    </extension-object>
+  </extension-objects>
+</application>
