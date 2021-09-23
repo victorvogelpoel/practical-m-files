@@ -8,7 +8,7 @@ Copyright 2021 Dramatic Development - Victor Vogelpoel
 			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
   <guid>45472745-9d80-4b42-b092-463f3c38b6f1</guid>
   <name>vaultapplication-reporttoeventlog-with-serilog</name>
-  <description>Sample Vault Application for demonstrating logging tp the EventLog using the SysUtils.ReportToEventLog through Serilog structured logging using the Serilog.Sinks.MFilesSysUtilsEventLog nuget package</description>
+  <description>Sample Vault Application for demonstrating logging to the EventLog using the SysUtils.ReportToEventLog() functions through Serilog structured logging with the Serilog.Sinks.MFilesSysUtilsEventLog nuget package</description>
   <publisher>Dramatic Development</publisher>
   <version>0.2</version>
   <copyright>Copyright 2021 Dramatic Development</copyright>
