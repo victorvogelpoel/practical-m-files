@@ -4,7 +4,7 @@
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
   <guid>c4812233-31bd-467e-8d7e-265e68831a4c</guid>
-  <name>Sample Vault Application with clean architecture</name>
+  <name>vaultapplication-cleanarch</name>
   <description>Sample vault application with a clean architecture setup</description>
   <publisher>Dramatic Development</publisher>
   <version>0.1</version>
@@ -13,8 +13,8 @@
   <multi-server-compatible>false</multi-server-compatible>
   <extension-objects>
     <extension-object>
-      <name>VaultApplicationCleanArchitecture</name>
-      <assembly>VaultApplicationCleanArchitecture.dll</assembly>
+      <name>vaultapplication-cleanarch</name>
+      <assembly>vaultapplication-cleanarch.dll</assembly>
       <class>VaultApplicationCleanArchitecture.VaultApplication</class>
       <installation-method>Install</installation-method>
       <uninstallation-method>Uninstall</uninstallation-method>
