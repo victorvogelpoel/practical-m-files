@@ -1,6 +1,8 @@
-// Configuration.cs
-// 16-9-2021
-// Copyright 2021 Dramatic Development - Victor Vogelpoel
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// %FileName%
+// %CreationDay%-%CreationMonth%-%CreationYear%
+// Copyright %CreationYear% Dramatic Development - Victor Vogelpoel
 // If this works, it was written by Victor Vogelpoel (victor@victorvogelpoel.nl).
 // If it doesn't, I don't know who wrote it.
 //
@@ -16,16 +18,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using MFiles.VAF.Configuration;
-using MFiles.VAF.Configuration.JsonAdaptor;
-
-namespace VaultApplicationCleanArchitecture
-{
-    [DataContract]
-    public class Configuration
-    {
-    }
-}
+extensions: .aspx .ascx
+<%--
+Copyright %CreationYear% Dramatic Development - Victor Vogelpoel
+--%>
+extensions:  .xml .config .xsd
+<!--
+Copyright %CreationYear% Dramatic Development - Victor Vogelpoel
+-->

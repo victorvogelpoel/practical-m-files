@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright 2021 Dramatic Development - Victor Vogelpoel
+-->
 <application
 			type="server-application"
 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

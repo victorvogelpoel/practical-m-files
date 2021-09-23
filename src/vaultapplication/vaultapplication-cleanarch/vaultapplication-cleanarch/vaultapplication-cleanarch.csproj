@@ -67,6 +67,7 @@
   <ItemGroup>
     <None Include="install-application.ps1" />
     <None Include="packages.config" />
+    <None Include="vaultapplication-cleanarch.licenseheader" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MFiles.VAF">
