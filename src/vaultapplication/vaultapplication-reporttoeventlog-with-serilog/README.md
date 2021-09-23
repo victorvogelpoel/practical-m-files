@@ -5,11 +5,37 @@ This sample Vault Application demonstraties logging to the EventLog using the Sy
 **Two** Serilog.Sinks.MFilesSysUtilsEventLog sinks are configured in this vault application, where the first logs flat text and the other logs events in compact JSON.
 
 ```csharp
+using Serilog;
+using Serilog.Core;
+using Serilog.Events;
+using Serilog.Formatting.Compact;
+
+// ...
+public void ConfigureApplication(Configuration configuration)
+{
+    // ...
+
+    // Build Serilog logger with our sinks
+    Log.Logger = new LoggerConfiguration()
+        .MinimumLevel.ControlledBy(_loggingLevelSwitch)
+
+        // Write the same log event to the MFilesSysUtilsEventLogSink with the default message template
+        .WriteTo.MFilesSysUtilsEventLogSink()
+
+        // Write the same log event to the MFilesSysUtilsEventLogSink, but format it as JSON. Now other log properties beyond the message template are visible too.
+        .WriteTo.MFilesSysUtilsEventLogSink(formatter: new RenderedCompactJsonFormatter ())
+
+        .CreateLogger();
+}
+
+
 [EventHandler(MFEventHandlerType.MFEventHandlerBeforeCheckInChangesFinalize, ObjectType = (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument)]
 public void BeforeCheckInChangesFinalizeUpdateLogDemo(EventHandlerEnvironment env)
 {
     Log.Information("User {UserID} has checked in document {DisplayID} at {TimeStamp}", env.CurrentUserID, env.DisplayID, DateTime.Now);
 }
+
+
 ```
 
 The **result** of a logging statement in this sample vault application are two event log entries:
