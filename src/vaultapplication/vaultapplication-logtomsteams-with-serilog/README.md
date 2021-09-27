@@ -3,7 +3,7 @@
 This sample Vault Application demonstraties logging to an Microsoft Teams channel with an incoming webhook connector through Serilog structured logging using a somewhat downgraded and mangled Serilog.Sinks.MicrosoftTeams.Alternative package.
 Each logging statement now produces an "card" entry in the Microsoft Teams channel
 
-![screenshot msteams cards with log](..\..\..\media\vaultapplication-logtomsteams-with-serilog-cards.png)
+![screenshot msteams cards with log](../../../media/vaultapplication-logtomsteams-with-serilog-cards.png)
 
 NOTE: I copied the Serilog.Sinks.MicrosoftTeams.Alternative source code and replaced the Newtonsoft.Json 13.x code for JSON serialization with UTF8Json code. The VAF uses Newtonsoft.Json 10.x and that clashes with the version in the Serilog.Sinks.MicrosoftTeams.Alternative source.
 
