@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|resource|revert|style|test)(\(.+?\))?: .{1,}$"; then
+    echo "Aborting commit. Your commit message header does not adhere to the convention." >&2
+    echo "<type>(<scope>): <short summary>" >&2
+    echo "<BLANK LINE>" >&2
+    echo "<body>" >&2
+    echo "<BLANK LINE>" >&2
+    echo "<footer>" >&2
+    echo " " >&2
+    echo "Types:" >&2
+    echo "- build: Changes that affect the build system or external dependencies" >&2
+    echo "- ci: Changes to the CI configuration files and scripts" >&2
+    echo "- chore: Other changes that don't modify src or test files; no production code change" >&2
+    echo "- docs: documentation-only changes" >&2
+    echo "- resource: resource changes; no production code change" >&2
+    echo "- feat: new feature for the user (not a new feature for build script)" >&2
+    echo "- fix: bug fix for the user (not a fix to a build script)" >&2
+    echo "- perf: A code change that improves performance" >&2
+    echo "- revert: Reverts a previous commit" >&2
+    echo "- refactor: A code change that neither fixes a bug nor adds a feature" >&2
+    echo "- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc); no production code change" >&2
+    echo "- test: Adding missing tests or correcting existing tests; no production code change" >&2
+    echo " " >&2
+	echo "scopes: common, config, sampleapp, vault, logtovault, sink" >&2
+    exit 1
+fi
+#if ! head -1 "$1" | grep -qE "^.{1,50}$"; then
+#    echo "Aborting commit. Your commit message header is too long." >&2
+#    exit 1
+#fi
