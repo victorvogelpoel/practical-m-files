@@ -1,3 +1,0 @@
-# M-Files sample vault application using event logging with Serilog.Sinks.MicrosoftTeams.Alternative
-
-This sample Vault Application demonstraties logging ... 
