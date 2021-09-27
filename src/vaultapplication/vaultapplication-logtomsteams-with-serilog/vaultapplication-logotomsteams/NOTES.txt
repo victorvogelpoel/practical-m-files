@@ -1,0 +1,7 @@
+
+
+https://theonenl.webhook.office.com/webhookb2/2570aad8-7f8d-490c-8cb1-1aeb2d592e9f@77d46071-903f-4021-a603-8e2019c35847/IncomingWebhook/6a890cc00c464b1098c75695e9580936/cdb2d3ff-68b5-45cc-9fc6-573f209e8233
+
+
+
+{"@type":"MessageCard","@context":"http://schema.org/extensions","title":"[27-09-2021 17:51:48] log-to-teams-PoC","text":"Logging information message from console app to Microsoft Teams channel especially for customer \"Ecclesia\"","themeColor":"5bc0de","sections":[{"title":"Properties","facts":[{"name":"Level","value":"Information"},{"name":"MessageTemplate","value":"Logging information message from console app to Microsoft Teams channel especially for customer {Customer}"},{"name":"Customer","value":"\"Ecclesia\""},{"name":"Occurred on","value":"27.09.2021 17:51:48+02:00"}]}],"potentialAction":null}

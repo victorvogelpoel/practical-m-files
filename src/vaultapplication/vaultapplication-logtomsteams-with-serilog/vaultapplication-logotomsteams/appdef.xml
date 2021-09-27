@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright 2021 Dramatic Development - Victor Vogelpoel
+-->
+<application
+			type="server-application"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
+  <guid>41FB962E-332E-4FCB-AE9C-0A631123F4C1</guid>
+  <name>vaultapplication-logtomsteams-with-serilog</name>
+  <description>Sample Vault Application for demonstrating logging to an MSTeams channel with Incoming Webhook connector through Serilog structured logging with the Serilog.Sinks.MicrosoftTeams.Alternative nuget package</description>
+  <publisher>Dramatic Development</publisher>
+  <version>0.2</version>
+  <copyright>Copyright 2021 Dramatic Development</copyright>
+  <required-mfiles-version>20.5.0.0</required-mfiles-version>
+  <multi-server-compatible>false</multi-server-compatible>
+  <extension-objects>
+    <extension-object>
+      <name>vaultapplication-logtomsteams-with-serilog</name>
+      <assembly>vaultapplication-logtomsteams-with-serilog.dll</assembly>
+      <class>VaultapplicationLogToMSTeamsWithSerilog.VaultApplication</class>
+      <installation-method>Install</installation-method>
+      <uninstallation-method>Uninstall</uninstallation-method>
+      <initialization-method>Initialize</initialization-method>
+      <uninitialization-method>Uninitialize</uninitialization-method>
+      <start-operations-method>StartOperations</start-operations-method>
+    </extension-object>
+  </extension-objects>
+</application>
