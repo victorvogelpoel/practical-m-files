@@ -90,16 +90,14 @@ Tests are worked out with mocks and stubs variants. This  is a stub variant:
 
 ```csharp
 [DataTestMethod]
-[DataRow("A document title")]
-[DataRow("A")]
-public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(string objectTitle)
+// objectTitle,                 expectedUpdatedTitle
+[DataRow("A document title",    "A document title 2021-09-27")]
+[DataRow("A",                   "A 2021-09-27")]
+public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(string objectTitle, string expectedUpdatedTitle)
 {
-    var lastModified            = DateTime.Now;
-    var lastModifiedUTC         = lastModified.ToUniversalTime();
+    var lastModifiedUTC         = DateTime.Parse("2021-09-27 21:15:10").ToUniversalTime();
     var objVer                  = new ObjVer();
     var userId                  = 1;
-
-    var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
 
     var objectRepository        = new ObjectRepositoryStub();
     objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
@@ -111,5 +109,6 @@ public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(st
     // ASSERT
     objectRepository.GetObjectTitle(objVer).Should().Be(expectedUpdatedTitle);
 }
+
 
 ```
