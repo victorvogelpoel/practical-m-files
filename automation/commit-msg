@@ -21,7 +21,7 @@ if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|resou
     echo "- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc); no production code change" >&2
     echo "- test: Adding missing tests or correcting existing tests; no production code change" >&2
     echo " " >&2
-	echo "scopes: common, config, sampleapp, vault, logtovault, sink" >&2
+	echo "scopes: [name of the sample app], common, config, vault, deps, commit" >&2
     exit 1
 fi
 #if ! head -1 "$1" | grep -qE "^.{1,50}$"; then
