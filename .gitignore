@@ -349,3 +349,4 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 src/vaultapplication/vaultapplication-cleanarch - Copy/**
+src/vaultapplication/vaultapplication-logtomsteams-with-serilog/vaultapplication-logotomsteams/VaultApplication - WITH TheOne incoming webhook.cs
