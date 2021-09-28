@@ -26,12 +26,8 @@ namespace vaultapplication_cleanarch_tests
         [DataRow("ABCDEFGHI",           "ABCDEFGHI 2021-09-27")]
         public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle(string objectTitle, string expectedUpdatedTitle)
         {
-            //var lastModified            = DateTime.Now;
-            //var lastModifiedUTC         = lastModified.ToUniversalTime();
             var lastModifiedUTC         = DateTime.Parse("2021-09-27 21:15:10").ToUniversalTime();
             var userId                  = 1;
-
-            //var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
 
             var objectRepositoryMock = new Mock<IObjectRepository>();
             objectRepositoryMock.Setup(m=>m.GetObjectTitle(It.IsAny<ObjVer>())).Returns(objectTitle);
