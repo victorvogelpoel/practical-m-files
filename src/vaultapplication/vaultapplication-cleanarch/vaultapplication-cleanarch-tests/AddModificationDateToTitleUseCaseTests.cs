@@ -13,23 +13,25 @@ namespace vaultapplication_cleanarch_tests
     public class AddModificationDateToTitleUseCaseTests
     {
         [DataTestMethod]
-        [DataRow("A document title")]
-        [DataRow("A")]
-        [DataRow("AB")]
-        [DataRow("ABC")]
-        [DataRow("ABCD")]
-        [DataRow("ABCDE")]
-        [DataRow("ABCDEF")]
-        [DataRow("ABCDEFG")]
-        [DataRow("ABCDEFGH")]
-        [DataRow("ABCDEFGHI")]
-        public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle(string objectTitle)
+        // objectTitle,                 expectedUpdatedTitle
+        [DataRow("A document title",    "A document title 2021-09-27")]
+        [DataRow("A",                   "A 2021-09-27")]
+        [DataRow("AB",                  "AB 2021-09-27")]
+        [DataRow("ABC",                 "ABC 2021-09-27")]
+        [DataRow("ABCD",                "ABCD 2021-09-27")]
+        [DataRow("ABCDE",               "ABCDE 2021-09-27")]
+        [DataRow("ABCDEF",              "ABCDEF 2021-09-27")]
+        [DataRow("ABCDEFG",             "ABCDEFG 2021-09-27")]
+        [DataRow("ABCDEFGH",            "ABCDEFGH 2021-09-27")]
+        [DataRow("ABCDEFGHI",           "ABCDEFGHI 2021-09-27")]
+        public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle(string objectTitle, string expectedUpdatedTitle)
         {
-            var lastModified            = DateTime.Now;
-            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            //var lastModified            = DateTime.Now;
+            //var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var lastModifiedUTC         = DateTime.Parse("2021-09-27 21:15:10").ToUniversalTime();
             var userId                  = 1;
 
-            var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
+            //var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
 
             var objectRepositoryMock = new Mock<IObjectRepository>();
             objectRepositoryMock.Setup(m=>m.GetObjectTitle(It.IsAny<ObjVer>())).Returns(objectTitle);
@@ -123,24 +125,22 @@ namespace vaultapplication_cleanarch_tests
         // Tests with STUB
 
         [DataTestMethod]
-        [DataRow("A document title")]
-        [DataRow("A")]
-        [DataRow("AB")]
-        [DataRow("ABC")]
-        [DataRow("ABCD")]
-        [DataRow("ABCDE")]
-        [DataRow("ABCDEF")]
-        [DataRow("ABCDEFG")]
-        [DataRow("ABCDEFGH")]
-        [DataRow("ABCDEFGHI")]
-        public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(string objectTitle)
+        // objectTitle,                 expectedUpdatedTitle
+        [DataRow("A document title",    "A document title 2021-09-27")]
+        [DataRow("A",                   "A 2021-09-27")]
+        [DataRow("AB",                  "AB 2021-09-27")]
+        [DataRow("ABC",                 "ABC 2021-09-27")]
+        [DataRow("ABCD",                "ABCD 2021-09-27")]
+        [DataRow("ABCDE",               "ABCDE 2021-09-27")]
+        [DataRow("ABCDEF",              "ABCDEF 2021-09-27")]
+        [DataRow("ABCDEFG",             "ABCDEFG 2021-09-27")]
+        [DataRow("ABCDEFGH",            "ABCDEFGH 2021-09-27")]
+        [DataRow("ABCDEFGHI",           "ABCDEFGHI 2021-09-27")]
+        public void WhenTitleHasNoModifiedDate_ExpectLastModifiedDateAppendedToTitle2(string objectTitle, string expectedUpdatedTitle)
         {
-            var lastModified            = DateTime.Now;
-            var lastModifiedUTC         = lastModified.ToUniversalTime();
+            var lastModifiedUTC         = DateTime.Parse("2021-09-27 21:15:10").ToUniversalTime();
             var objVer                  = new ObjVer();
             var userId                  = 1;
-
-            var expectedUpdatedTitle    = $"{objectTitle} {lastModified:yyyy-MM-dd}";
 
             var objectRepository        = new ObjectRepositoryStub();
             objectRepository.AddObjectStub(objVer, objectTitle, lastModifiedUTC);
