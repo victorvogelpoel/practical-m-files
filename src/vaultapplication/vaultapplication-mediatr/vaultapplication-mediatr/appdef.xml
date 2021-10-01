@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application
+			type="server-application"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
+  <guid>3def576e-92b0-4362-ae88-2c518d63df83</guid>
+  <name>Sample Vault Application with Mediatr</name>
+  <description>Sample Vault Application with Mediatr</description>
+  <publisher>Dramatic Development</publisher>
+  <version>0.1</version>
+  <copyright>Copyright (c) 2021 Dramatic Development - Victor Vogelpoel</copyright>
+  <required-mfiles-version>20.5.0.0</required-mfiles-version>
+  <multi-server-compatible>false</multi-server-compatible>
+  <extension-objects>
+    <extension-object>
+      <name>VaultApplicationMediatr</name>
+      <assembly>VaultApplicationMediatr.dll</assembly>
+      <class>VaultApplicationMediatr.VaultApplication</class>
+      <installation-method>Install</installation-method>
+      <uninstallation-method>Uninstall</uninstallation-method>
+      <initialization-method>Initialize</initialization-method>
+      <uninitialization-method>Uninitialize</uninitialization-method>
+      <start-operations-method>StartOperations</start-operations-method>
+    </extension-object>
+  </extension-objects>
+</application>
