@@ -23,11 +23,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("vaultapplication-reporttoeventlog-with-serilog")]
-[assembly: AssemblyDescription("Sample Vault Application for demonstrating the MFilesSysUtilsEventLog Serilog sink")]
+[assembly: AssemblyTitle("vaultapplication-net48")]
+[assembly: AssemblyDescription("Sample Vault Application for demonstrating running with .NET framework 4.8 target")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dramatic Development - Victor Vogelpoel")]
-[assembly: AssemblyProduct("vaultapplication-reporttoeventlog-with-serilog")]
+[assembly: AssemblyProduct("vaultapplication-net48")]
 [assembly: AssemblyCopyright("Copyright © 2021 Dramatic Development - Victor Vogelpoel")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
