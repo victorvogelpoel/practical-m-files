@@ -1,0 +1,29 @@
+name: Build all practical-m-files projects
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["src/**"]
+
+jobs:
+  build:
+    timeout-minutes: 15
+    runs-on: 'windows-latest'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup MSBuild path
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore NuGet packages
+      run: nuget restore
+
+    - name: Build
+      run: msbuild vaultapplication-cleanarch.sln -target:src\vaultapplication\vaultapplication-cleanarch /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      
+      
+      
