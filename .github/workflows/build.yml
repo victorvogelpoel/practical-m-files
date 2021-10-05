@@ -22,6 +22,7 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln
 
+
     - name: Build vaultapplication-cleanarch
-      run: msbuild vaultapplication-cleanarch.sln -target:src\vaultapplication\vaultapplication-cleanarch /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild vaultapplication-cleanarch.sln -target:src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.csproj /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
       
