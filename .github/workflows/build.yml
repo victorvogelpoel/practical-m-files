@@ -24,6 +24,6 @@ jobs:
 
 
     - name: Build vaultapplication-cleanarch
-      run: msbuild vaultapplication-cleanarch.sln -target:src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch\vaultapplication-cleanarch.csproj /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
       
       
