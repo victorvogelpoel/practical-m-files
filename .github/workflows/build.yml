@@ -24,7 +24,7 @@ jobs:
       run: nuget restore src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln
 
     - name: Restore NuGet packages vaultapplication-logtomsteams-with-serilog
-      run: nuget restore  src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln"
+      run: nuget restore  src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln
 
     - name: Restore NuGet packages vaultapplication-mediatr
       run: nuget restore  src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln
@@ -46,7 +46,7 @@ jobs:
       run: msbuild src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
 
     - name: Build vaultapplication-logtomsteams-with-serilog
-      run: msbuild src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln" /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
       
     - name: Build vaultapplication-mediatr
       run: msbuild src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
