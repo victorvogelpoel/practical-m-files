@@ -11,14 +11,7 @@ jobs:
     runs-on: 'windows-latest'
     strategy:
       matrix: 
-        solution: [
-        'src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln',
-        'src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln',
-        'src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln',
-        'src\vaultapplication\vaultapplication-net48\vaultapplication-net48.sln',
-        'src\vaultapplication\vaultapplication-reporttoeventlog-with-serilog\vaultapplication-reporttoeventlog-with-serilog.sln',
-        'src\vaultapplication\vaultapplication-unittestable-usecase\vaultapplication-unittestable-usecase.sln'
-        ]
+        solution: [ "src/**/*.sln" ]
 
     steps:
     - uses: actions/checkout@v2
