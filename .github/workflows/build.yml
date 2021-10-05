@@ -25,7 +25,10 @@ jobs:
     - name: Set timezone on Windows to Central Europe Standard Time
       run: tzutil /s "Central Europe Standard Time"
 
-    - name: Build vaultapplication-cleanarch
+    - name: Build
       run: msbuild src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
-      
-      
+      run: msbuild src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln" /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-net48\vaultapplication-net48.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-reporttoeventlog-with-serilog\vaultapplication-reporttoeventlog-with-serilog.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
+      run: msbuild src\vaultapplication\vaultapplication-unittestable-usecase\vaultapplication-unittestable-usecase.sln /nologo /verbosity:m /p:Configuration=Release /p:DefineConstants="DONOTDEPLOY"
