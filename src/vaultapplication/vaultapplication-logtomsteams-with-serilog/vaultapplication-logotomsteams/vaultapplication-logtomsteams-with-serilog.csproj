@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15C41E9D-35E8-4904-A1E0-74D5A27829A7}</ProjectGuid>
+    <ProjectGuid>{C1FAEEF1-C22A-4D10-B4C2-F8F11E8C448B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VaultapplicationLogToMSTeamsWithSerilog</RootNamespace>
@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MFiles.VAF">
-      <Version>2.2.0.11</Version>
+      <Version>2.3.623.2</Version>
     </PackageReference>
     <PackageReference Include="MSBuildTasks">
       <Version>1.5.0.235</Version>

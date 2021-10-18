@@ -26,3 +26,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:VaultapplicationLogToMSTeamsWithSerilog.VaultApplication.BeforeCheckInChangesFinalizeUpdateLogDemo(MFiles.VAF.Common.EventHandlerEnvironment)")]
 [assembly: SuppressMessage("Major Code Smell", "S125:Sections of code should not be commented out", Justification = "<Pending>", Scope = "member", Target = "~M:VaultapplicationLogToMSTeamsWithSerilog.VaultApplication.BeforeCheckInChangesFinalizeUpdateLogDemo(MFiles.VAF.Common.EventHandlerEnvironment)")]
+[assembly: SuppressMessage("Minor Code Smell", "S1075:URIs should not be hardcoded", Justification = "<Pending>", Scope = "member", Target = "~M:VaultapplicationLogToMSTeamsWithSerilog.VaultApplication.ConfigureApplication(VaultapplicationLogToMSTeamsWithSerilog.Configuration)")]

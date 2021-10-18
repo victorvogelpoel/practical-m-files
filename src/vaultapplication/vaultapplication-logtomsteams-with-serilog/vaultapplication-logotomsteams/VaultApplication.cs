@@ -93,10 +93,9 @@ namespace VaultapplicationLogToMSTeamsWithSerilog
         /// <summary>
         /// Update the Serilog loggingLevelSwitch, when the LogLevel configuration for the Vault Application is changed in M-Files Admin.
         /// </summary>
-        /// <param name="context"></param>
-        /// <param name="clientOps"></param>
         /// <param name="oldConfiguration"></param>
-        protected override void OnConfigurationUpdated(IConfigurationRequestContext context, ClientOperations clientOps, Configuration oldConfiguration)
+        /// <param name="updateExternals"></param>
+        protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool updateExternals)
         {
             if (oldConfiguration.LogLevel != Configuration.LogLevel)
             {
@@ -104,7 +103,6 @@ namespace VaultapplicationLogToMSTeamsWithSerilog
 
                 Log.Information("Log level changed to {LogLevel}", Configuration.LogLevel);
             }
-
         }
 
 
