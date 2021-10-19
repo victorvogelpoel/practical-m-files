@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright 2021 Dramatic Development - Victor Vogelpoel
+-->
+<application
+			type="server-application"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-server-v3.xsd">
+  <guid>e461367b-4a4f-498b-a009-fa8d4ccc6085</guid>
+  <name>vaultapplication-logtolocalfile-with-serilog</name>
+  <description>Sample Vault Application demonstrating logging to a local file with Serilog</description>
+  <publisher>Dramatic Development</publisher>
+  <version>0.1</version>
+  <copyright>Copyright 2021 Dramatic Development</copyright>
+  <required-mfiles-version>20.5.0.0</required-mfiles-version>
+  <multi-server-compatible>false</multi-server-compatible>
+  <extension-objects>
+    <extension-object>
+      <name>vaultapplication-logtolocalfile-with-serilog</name>
+      <assembly>vaultapplication-logtolocalfile-with-serilog.dll</assembly>
+      <class>VaultApplicationLogToLocalFileWithSerilog.VaultApplication</class>
+      <installation-method>Install</installation-method>
+      <uninstallation-method>Uninstall</uninstallation-method>
+      <initialization-method>Initialize</initialization-method>
+      <uninitialization-method>Uninitialize</uninitialization-method>
+      <start-operations-method>StartOperations</start-operations-method>
+    </extension-object>
+  </extension-objects>
+</application>

@@ -13,6 +13,7 @@ jobs:
       matrix: 
         solution: [
         'src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln',
+        'src\vaultapplication\vaultapplication-logtolocalfile-with-serilog\vaultapplication-logtolocalfile-with-serilog.sln',
         'src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln',
         'src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln',
         'src\vaultapplication\vaultapplication-net48\vaultapplication-net48.sln',
