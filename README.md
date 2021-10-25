@@ -6,6 +6,8 @@ If you are a developer and building solutions and integrations with M-Files, the
 
 In my quest in learning the M-Files applications platform, `practical-m-files` is my write-up of simple applications with the M-Files APIs and some proposals for lacking features, like using Serilog for logging in vault application.
 
+![O'RLY?](./media/orly_smaller.png)
+
 ## Table of contents <!-- omit in toc -->
 
 - [Requirements](#requirements)
