@@ -1,0 +1,261 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="C:\Users\victo\.nuget\packages\interop.mfilesapi\21.11.4\lib\net45\Interop.MFilesAPI.dll" #>
+
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Threading" #>
+<#@ import namespace="System.Threading.Tasks" #>
+<#@ import namespace="MFilesAPI" #>
+<#@ output extension=".cs" #>
+<#
+    var cultureInfo = Thread.CurrentThread.CurrentCulture;
+    var textInfo    = cultureInfo.TextInfo;
+
+    var mfServerApplication = new MFilesServerApplication();
+
+    var vaultID     = "{316EE0B8-8752-40CB-A03D-22B9F647B521}";
+    var vaultServer = "localhost";
+    var vaultPort   = "2266";
+
+    // Connect to the practical-mfiles vault using the default authentication details,
+    // specifying the server details.
+    mfServerApplication.Connect(
+        ProtocolSequence:   "ncacn_ip_tcp",
+        NetworkAddress:     vaultServer,
+        Endpoint:           vaultPort);
+
+    var vault               = mfServerApplication.LogInToVault(vaultID);
+    var vaultName           = vault.Name;
+    var vaultVariablename   = textInfo.ToTitleCase(ConvertToVariableName(vaultName, "Vault"));
+
+    // Retrieve vault structure
+    //var propertyDefs        = vault.PropertyDefOperations.GetPropertyDefs().Cast<PropertyDef>();
+    //var propertyDefsAdmin   = vault.PropertyDefOperations.GetPropertyDefsAdmin().Cast<PropertyDefAdmin>();
+    var objectTypes         = vault.ObjectTypeOperations.GetObjectTypes().Cast<ObjType>();
+    var classes             = vault.ClassOperations.GetAllObjectClasses().Cast<ObjectClass>();
+    var classGroups         = vault.ClassGroupOperations.GetClassGroups(0).Cast<ClassGroup>().ToList(); // TODO: get class groups for all objectTypes
+
+#>
+using System;
+using MFilesAPI;
+
+// This M-Files vault structure file was generated at <#=DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")#> by a T4 Text Template that read the following vault:
+// Vault name:   <#=vaultName#>
+// Vault ID:     <#=vaultID#>
+// Vault server: <#=vaultServer#>:<#=vaultPort#>
+//
+// If this works, it was written by Victor Vogelpoel (victor@victorvogelpoel.nl).
+// If it doesn't, I don't know who wrote it.
+
+namespace Dramatic.MFiles
+{
+	public static partial class VaultStructure
+    {
+<#
+        WriteLine("");
+        WriteLine($"        // -----------------------------------------------------------------------------------------------------------------------------------------");
+        WriteLine($"        // {vaultName} PropertyDefs");
+        WriteLine("");
+
+        WriteLine(GeneratePropertyDefCode(vault));
+
+        WriteLine("");
+        WriteLine($"        // -----------------------------------------------------------------------------------------------------------------------------------------");
+        WriteLine($"        // {vaultName} ObjectTypes");
+        WriteLine("");
+
+        foreach (var objectType in objectTypes)
+        {
+            var objectTypeIdVariableName    = ConvertToVariableName($"OT{objectType.NamePlural}ID", "OT");
+            var objectTypeNameVariableName  = ConvertToVariableName($"OT{objectType.NamePlural}Name", "OT");
+
+            var xmldoc                      = $"        /// <summary>ObjectType ID:{objectType.ID} Name:\"{objectType.NameSingular}\" / \"{objectType.NamePlural}\"</summary>";
+
+            WriteLine(xmldoc);
+            WriteLine($"        public static readonly int {objectTypeIdVariableName} = {objectType.ID};");
+            WriteLine(xmldoc);
+            WriteLine($"        public static readonly string {objectTypeNameVariableName} = \"{objectType.NamePlural}\";");
+            WriteLine("");
+        }
+
+        WriteLine("");
+        WriteLine($"        // -----------------------------------------------------------------------------------------------------------------------------------------");
+        WriteLine($"        // {vaultName} Classes");
+        WriteLine("");
+
+        WriteLine(GenerateClassCode(vault));
+
+        WriteLine("");
+
+#>
+    }
+}
+
+<#+
+
+private string ConvertToVariableName(string vaultResourceName, string prefixWhenStartingWithDigit = "S" )
+{
+    if (string.IsNullOrWhiteSpace(vaultResourceName))
+        return "";
+
+    vaultResourceName = vaultResourceName.Normalize(NormalizationForm.FormD);
+    var chars = vaultResourceName.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark && Char.IsLetterOrDigit(c)).ToArray();
+    vaultResourceName = new string(chars).Normalize(NormalizationForm.FormC);
+
+    if (vaultResourceName.Length == 0)
+    {
+        throw new ArgumentException($"vault resource name \"{vaultResourceName}\" results in empty variableName.", nameof(vaultResourceName));
+    }
+
+    if (Char.IsDigit(vaultResourceName[0]))
+    {
+        vaultResourceName = prefixWhenStartingWithDigit + vaultResourceName;
+    }
+
+    return vaultResourceName;
+}
+
+private string GeneratePropertyDefCode(Vault vault)
+{
+    var propertyDefsAdmin   = vault.PropertyDefOperations.GetPropertyDefsAdmin().Cast<PropertyDefAdmin>();
+    var code                = new StringBuilder();
+
+    var allPropertyDefVariableNames     = propertyDefsAdmin.Select(pd => ConvertToVariableName($"PD{pd.PropertyDef.Name}")).ToList();
+
+    foreach (var propertyDefAdmin in propertyDefsAdmin)
+    {
+        var propertyDef                 = propertyDefAdmin.PropertyDef;
+        var shortDataTypeName           = propertyDefAdmin.PropertyDef.DataType.ToString().Substring(10);  // Remove "MFDataType" from eg "MFDataTypeText" -> "Text"
+        var aliases                     = propertyDefAdmin.SemanticAliases.Value;
+        var propertyDefVariableName     = ConvertToVariableName($"PD{propertyDef.Name}");
+        var aliasesList                 = aliases.Split(';').Select(a => a.Trim()).Where(a => !String.IsNullOrWhiteSpace(a)).Distinct().ToList();
+
+        var xmldoc  = $"        /// <summary>PropertyDef \"{propertyDef.Name}\" (ID:{propertyDef.ID}), Type:{shortDataTypeName}, Aliases:{(String.IsNullOrWhiteSpace(aliases)?"(none)":$"\"{aliases}\"")}</summary>";
+
+        // Test if the propertyDefVariableName exists more than once in the propDef list
+        if (allPropertyDefVariableNames.Count(pd => pd == propertyDefVariableName) > 1)
+        {
+            // Aaii, the PropertyDef list contains duplicate names; try the alias
+            var newpropertyDefVariableName = propertyDefVariableName;
+
+            foreach (var alias in aliasesList)
+            {
+                var aliasVariableName = ConvertToVariableName(alias);
+
+                if (allPropertyDefVariableNames.Any(pd => pd == aliasVariableName))
+                {
+                    newpropertyDefVariableName = aliasVariableName;
+                    break;
+                }
+            }
+
+            if (newpropertyDefVariableName == propertyDefVariableName)
+            {
+                // Alias did not resolve to an new unique variable name.
+                // Now add the propDef ID to make the variable name unique.
+                newpropertyDefVariableName = $"{newpropertyDefVariableName}{propertyDef.ID}";
+            }
+
+            propertyDefVariableName = newpropertyDefVariableName;
+        }
+
+
+        // First output the aliases
+        if (aliasesList.Count == 1)
+        {
+            code.AppendLine(xmldoc);
+            code.AppendLine($"        public static readonly string {propertyDefVariableName}Alias = \"{aliasesList[0]}\";");
+        }
+        else
+        {
+            var aliasIndex = 1;
+            foreach (var alias in aliasesList)
+            {
+                code.AppendLine(xmldoc);
+                code.AppendLine($"        public static readonly string {propertyDefVariableName}Alias{aliasIndex++} = \"{alias}\";");
+            }
+        }
+
+        // Then output the propertyDef
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly int {propertyDefVariableName}ID = {propertyDef.ID};");
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly string {propertyDefVariableName}Name = \"{propertyDef.Name}\";");
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly MFDataType {propertyDefVariableName}DataType = MFDataType.{propertyDef.DataType};");
+        code.AppendLine();
+    }
+
+    return code.ToString();
+}
+
+
+private string GenerateClassCode(Vault vault)
+{
+    var classesAdmin        = vault.ClassOperations.GetAllObjectClassesAdmin().Cast<ObjectClassAdmin>();
+    var classGroups         = vault.ClassGroupOperations.GetClassGroups((int)MFBuiltInDocumentClass.MFBuiltInDocumentClassUnclassifiedDocument).Cast<ClassGroup>().ToList(); // TODO: get class groups for all objectTypes
+
+    var code                = new StringBuilder();
+
+    foreach (var classObject in classesAdmin)
+    {
+        var classVariableName   = ConvertToVariableName($"CL{classObject.Name}");
+        var aliases             = classObject.SemanticAliases.Value;
+        var aliasesList         = aliases.Split(';').Select(a => a.Trim()).Where(a => !String.IsNullOrWhiteSpace(a)).Distinct().ToList();
+
+        var xmldoc = $"        /// <summary>Class \"{classObject.Name}\" (ID:{classObject.ID}, OT:{classObject.ObjectType}), Aliases:{(String.IsNullOrWhiteSpace(aliases)?"(none)":$"\"{aliases}\"")}</summary>";
+
+        // Classes may have the same name, but have a different ID. For example, multiple "Memo" classes exist in different class groups.
+        // We need to prefix the generated variable name with classgroup name
+        if (classesAdmin.Count(c => c.Name == classObject.Name) > 1)
+        {
+            // Find the ParentClassGroup for the
+            var parentClassGroupName = classGroups.Find(cg => cg.Members.IndexOf(classObject.ID) != -1)?.Name;
+
+            // Postfix the classVariableName with ClassGroup name
+            classVariableName += parentClassGroupName;
+        }
+
+        classVariableName               = ConvertToVariableName($"{classVariableName}", "CL");
+
+        // First output the aliases
+        if (aliasesList.Count == 1)
+        {
+            code.AppendLine(xmldoc);
+            code.AppendLine($"        public static readonly string {classVariableName}Alias = \"{aliasesList[0]}\";");
+        }
+        else
+        {
+            var aliasIndex = 1;
+            foreach (var alias in aliasesList)
+            {
+                code.AppendLine(xmldoc);
+                code.AppendLine($"        public static readonly string {classVariableName}Alias{aliasIndex++} = \"{alias}\";");
+            }
+        }
+
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly int {classVariableName}ID = {classObject.ID};");
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly string {classVariableName}Name = \"{classObject.Name}\";");
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly int {classVariableName}ObjectType = {classObject.ObjectType};");
+        code.AppendLine(xmldoc);
+        code.AppendLine($"        public static readonly int {classVariableName}NamePropertyDef = {classObject.NamePropertyDef};");
+        code.AppendLine();
+    }
+
+    return code.ToString();
+}
+
+#>
