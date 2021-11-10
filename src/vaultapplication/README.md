@@ -1,6 +1,6 @@
 # Practical M-Files - vault applications
 
-These directory contains the practical samples for M-Files vault applications.
+This directory contains the practical samples for M-Files vault applications.
 
 |Project|Description|
 |:---|:---|
