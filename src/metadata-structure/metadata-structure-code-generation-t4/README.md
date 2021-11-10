@@ -4,7 +4,7 @@ This console application demonstrates that a C# file can be generated automatica
 
 T4 is a text template solution in Visual Studio to generate another file on the fly. The T4 file `vaultstructure.tt` in this solution `code-generation-t4` creates a connection to the local `practical-mfiles` vault, reads its vault structure and generates a C# file with IDs, names, aliases for propertyDefs, objectTypes and classes. You can use this C# file with vault structure IDs in your program.
 
-**Sample result C# file with vault structure IDs** - see [vaultstructure.cs](https://github.com/victorvogelpoel/practical-m-files/blob/main/src/metadata-structure/metadata-structure-code-generation-t4/vaultstructure.cs)
+**Sample result C# file with vault structure IDs** - see [vaultstructure.cs](https://github.com/victorvogelpoel/practical-m-files/blob/main/src/metadata-structure/metadata-structure-code-generation-t4/vaultstructure.cs), created on the fly from [vaultstructure.tt](https://github.com/victorvogelpoel/practical-m-files/blob/main/src/metadata-structure/metadata-structure-code-generation-t4/vaultstructure.tt) 
 ```csharp
 using System;
 using MFilesAPI;
