@@ -1,6 +1,6 @@
 ﻿<#@ template debug="false" hostspecific="false" language="C#" #>
 <#@ assembly name="System.Core" #>
-<#@ assembly name="C:\Users\victo\.nuget\packages\interop.mfilesapi\21.11.4\lib\net45\Interop.MFilesAPI.dll" #>
+<#@ assembly name="$(TargetDir)\Interop.MFilesAPI.dll" #>
 
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
