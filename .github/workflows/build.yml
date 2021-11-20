@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix: 
         solution: [
+        'src\metadata-structure\metadata-structure-code-generation-t4\code-generation-t4.sln',
         'src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln',
         'src\vaultapplication\vaultapplication-logtolocalfile-with-serilog\vaultapplication-logtolocalfile-with-serilog.sln',
         'src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln',
