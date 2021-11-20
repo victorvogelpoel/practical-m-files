@@ -24,7 +24,7 @@ namespace code_generation_t4
 
             //var PDCode = GeneratePropertyDefCode(vault);
             //var CLCode = GenerateClassCode(vault);
-            var PVCode = MFilesCodeGeneration.GeneratePropertyValueCode(vault);
+            var PVCode = MFilesCodeGeneration.GeneratePropertyValueForCode(vault);
 
 
 
@@ -33,7 +33,7 @@ namespace code_generation_t4
             var documentObjectTypeID = VaultStructure.OTDocumentsID;
 
             var searchProperties = new PropertyValues();
-            //searchProperties.Add(-1, PropertyValueFor.Nameortitle("The title"));
+            searchProperties.Add(-1, PropertyValueFor.PDNameortitle("The title"));
 
         }
 
