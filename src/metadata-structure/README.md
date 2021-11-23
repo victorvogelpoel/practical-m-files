@@ -1,6 +1,6 @@
-#
+# Practical M-Files - metadata-structure
 
-This directory contains the practical samples for vault structue.
+This directory contains the practical samples for vault structure.
 
 |Project|Description|
 |:---|:---|

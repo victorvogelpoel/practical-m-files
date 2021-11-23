@@ -2,7 +2,7 @@
 using System;
 using MFilesAPI;
 
-// This M-Files vault structure file was generated at 2021-11-20 10:11:41 by a T4 Text Template that read the following vault:
+// This M-Files vault structure file was generated at 2021-11-23 16:37:37 by a T4 Text Template that read the following vault:
 // Vault name:   practical-m-files
 // Vault ID:     {316EE0B8-8752-40CB-A03D-22B9F647B521}
 // Vault server: localhost:2266
@@ -12,7 +12,7 @@ using MFilesAPI;
 
 namespace Dramatic.Conversational.MFilesAPI
 {
-	public static class PropertyValueFor
+    public static class PropertyValueFor
     {
         // --------------------------------------------------------------------------------------------------------------------------------------------------
         // Building blocks
@@ -24,7 +24,6 @@ namespace Dramatic.Conversational.MFilesAPI
             return pv;
         }
 
-
         public static PropertyValue MultiLineTextPropDef(MFBuiltInPropertyDef propDefID, string value) => MultiLineTextPropDef((int)propDefID, value);
         public static PropertyValue MultiLineTextPropDef(int propDefID, string value)
         {
@@ -32,7 +31,6 @@ namespace Dramatic.Conversational.MFilesAPI
             pv.TypedValue.SetValue(MFDataType.MFDatatypeMultiLineText, value);
             return pv;
         }
-
 
         public static PropertyValue IntegerPropDef(MFBuiltInPropertyDef propDefID, int value) => IntegerPropDef((int)propDefID, value);
         public static PropertyValue IntegerPropDef(int propDefID, int value)
@@ -42,7 +40,6 @@ namespace Dramatic.Conversational.MFilesAPI
             return pv;
         }
 
-
         public static PropertyValue Integer64PropDef(MFBuiltInPropertyDef propDefID, Int64 value) => Integer64PropDef((int)propDefID, value);
         public static PropertyValue Integer64PropDef(int propDefID, Int64 value)
         {
@@ -51,7 +48,6 @@ namespace Dramatic.Conversational.MFilesAPI
             return pv;
         }
 
-
         public static PropertyValue BooleanPropDef(MFBuiltInPropertyDef propDefID, bool value) => BooleanPropDef((int)propDefID, value);
         public static PropertyValue BooleanPropDef(int propDefID, bool value)
         {
@@ -59,7 +55,6 @@ namespace Dramatic.Conversational.MFilesAPI
             pv.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, value);
             return pv;
         }
-
 
         public static PropertyValue DatePropDef(MFBuiltInPropertyDef propDefID, DateTime value) => DatePropDef((int)propDefID, value);
         public static PropertyValue DatePropDef(int propDefID, DateTime value)

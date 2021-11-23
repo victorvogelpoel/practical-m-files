@@ -8,21 +8,25 @@ T4 is a text template solution in Visual Studio to generate another file on the 
 
 You can use these T4 M-Files code generation in your own programs!
 
-1. Just copy over the .TT file
-2. Adapt the vault logging-in code to your vault.
+1. Just copy over the .TT file to Visual Studio solution folder and add it to your project.
+2. Adapt the code for logging into your vault in the .TT file.
 3. Presto! Visual Studio will generate the IDs and other generated code for **your vault**.
 
 The program.cs file shows a few sample uses from the generated code:
 
-- `VaultStructure` is a static class with all IDs for object types, classes, property definitions and value lists.
+- `VaultStructure` is a static class with all IDs for object types, classes, property definitions and value lists in the vault that was read for codegeneration.
 - `PropertyValueFor` is a static class to construct a PropertyValue for each and all property definitions in the vault.
 
 ```csharp
-// Using the generated IDs
+// Sample code that references the generated code from the practical-m-files vault
+// The "vaultstructure_ids.TT" file creates a .CS file on save/build that implements the static "VaultStructure" class with PropertyDef,
+// ObjectType and Class IDs:
 var nameOrTitlePropDefID = VaultStructure.PDNameortitleID;
 var documentObjectTypeID = VaultStructure.OTDocumentsID;
 
 
+// The "vaultstructure_propertyvaluefor.TT" file creates a .CS file on save/build that implements the static class "PropertyValueFor"
+// with a PropertyValue constructor for each PropertyDef in the vault!
 var searchProperties = new PropertyValues();
 // Constructing a PropertyValue for "Name or Title" with a value
 searchProperties.Add(-1, PropertyValueFor.PDNameortitle("The title"));
@@ -187,7 +191,7 @@ namespace Dramatic.MFiles
 }
 ```
 
-## Sample PropertyValueFor C# generated code for the practical-m-files vault
+## Sample "PropertyValueFor" C# generated code for the practical-m-files vault
 
 ```csharp
 using System;
