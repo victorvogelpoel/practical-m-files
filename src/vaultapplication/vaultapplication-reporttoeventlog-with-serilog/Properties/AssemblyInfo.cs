@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dramatic Development - Victor Vogelpoel")]
 [assembly: AssemblyProduct("vaultapplication-reporttoeventlog-with-serilog")]
-[assembly: AssemblyCopyright("Copyright © 2021 Dramatic Development - Victor Vogelpoel")]
+[assembly: AssemblyCopyright("Copyright © 2022 Dramatic Development - Victor Vogelpoel")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
