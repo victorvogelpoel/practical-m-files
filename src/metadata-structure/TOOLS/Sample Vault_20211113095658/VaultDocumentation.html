@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:user="http://mycompany.com/mynamespace">
+  <header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Vault Documentation</title>
+  </header>
+  <body>
+    <p class="title">Sample Vault</p>
+    <img src="VaultIcon.png" class="vaulticon" />
+    <p class="subtitle">Vault Configuration Documentation</p>
+    <br style="page-break-before:always" />
+    <p class="TOC">Table of Content</p>
+    <a name="TOC" />
+    <br style="page-break-before:always" />
+    <h2>Vault Overview</h2>
+    <table>
+      <tr>
+        <td>
+          Vault Name:
+        </td>
+        <td>Sample Vault</td>
+      </tr>
+      <tr>
+        <td>
+          Vault GUID:
+        </td>
+        <td>{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}</td>
+      </tr>
+      <tr>
+        <td>
+          Vault Language:
+        </td>
+        <td>eng</td>
+      </tr>
+      <tr>
+        <td>SQL Engine:</td>
+        <td>Firebird</td>
+      </tr>
+      <tr>
+        <td>Database Server:</td>
+        <td>localhost</td>
+      </tr>
+    </table>
+    <br style="page-break-before:always" />
+    <h2>Object Types</h2>
+    <h3>Overview of Object Types</h3>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Name (plural)</th>
+        <th>Aliases</th>
+        <th>Owner</th>
+        <th>External</th>
+        <th>ID</th>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\0\Default.ico" />
+        </td>
+        <td class="name">Document</td>
+        <td>Documents</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>0</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\9\Default.ico" />
+        </td>
+        <td class="name">Document collection</td>
+        <td>Document collections</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>9</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\10\Default.ico" />
+        </td>
+        <td class="name">Assignment</td>
+        <td>Assignments</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\15\Default.ico" />
+        </td>
+        <td class="name">Report</td>
+        <td>Reports</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>15</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\101\Default.ico" />
+        </td>
+        <td class="name">Project</td>
+        <td>Projects</td>
+        <td>MFiles.ObjectType.Project</td>
+        <td></td>
+        <td class="center" />
+        <td>101</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\136\Default.ico" />
+        </td>
+        <td class="name">Customer</td>
+        <td>Customers</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>136</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\149\Default.ico" />
+        </td>
+        <td class="name">Contact person</td>
+        <td>Contact persons</td>
+        <td></td>
+        <td>Customer</td>
+        <td class="center" />
+        <td>149</td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\156\Default.ico" />
+        </td>
+        <td class="name">Employee</td>
+        <td>Employees</td>
+        <td></td>
+        <td></td>
+        <td class="center" />
+        <td>156</td>
+      </tr>
+    </table>
+    <br style="page-break-before:always" />
+    <h3>
+      <img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\0\Default.ico" />Document</h3>
+    <h4>Classes</h4>
+    <h5>Other Document</h5>
+    <h6>
+      Associated Properties
+    </h6>
+    <table>
+      <th>Name</th>
+      <th>Datatype</th>
+      <th>Automatic</th>
+      <th>Required</th>
+      <th>Name Property</th>
+      <th>ID</th>
+      <tr>
+        <td>Name or title</td>
+        <td>Text</td>
+        <td class="center" />
+        <td class="center">
+                X
+              </td>
+        <td class="center">
+                X
+              </td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Keywords</td>
+        <td>Text</td>
+        <td class="center" />
+        <td class="center" />
+        <td class="center" />
+        <td>1004</td>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <td>MultiLineText</td>
+        <td class="center" />
+        <td class="center" />
+        <td class="center" />
+        <td>1034</td>
+      </tr>
+    </table>
+    <h6>Access Control</h6>
+    <table>
+      <tr>
+        <th>User or User Group</th>
+        <th>Allowed</th>
+        <th>Denied</th>
+      </tr>
+      <tr>
+        <td>
+          <font class="usergroup">All internal and external users</font>
+          <br />
+        </td>
+        <td>
+          <font class="green">see</font>, <font class="green">attachobjects</font></td>
+        <td />
+      </tr>
+    </table>
+    <h6>Workflow</h6>Other Document class doesn't have a default workflow.
+      <h5>Purchase Invoice</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>
+          Objects in <font class="highlight">Purchase Invoice</font> class are forced into the <font class="highlight">Reviewing and accepting purchase invoices</font> workflow.
+        <h5>Contract or Agreement</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Agreement title</td><td>Text</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1144</td></tr><tr><td>Agreement type</td><td>Lookup
+        (Agreement types)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1143</td></tr><tr><td>Owner</td><td>Lookup
+        (Employees)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1141</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Effective through</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1096</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Contact person</td><td>MultiSelectLookup
+        (Contact persons)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1081</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>
+          Objects in <font class="highlight">Contract or Agreement</font> class are, by default, placed into the <font class="highlight">Contract Approval Workflow</font> workflow.
+        <h5>Proposal</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Proposal title</td><td>Text</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1102</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Effective through</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1096</td></tr><tr><td>Accepted</td><td>Boolean</td><td class="center" /><td class="center" /><td class="center" /><td>1098</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr><tr><td>Proposal number</td><td>Integer</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center" /><td>1103</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Proposal class doesn't have a default workflow.
+      <h5>Memo</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Event date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1010</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Meeting type</td><td>MultiSelectLookup
+        (Meeting types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1017</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Memo class doesn't have a default workflow.
+      <h5>Other Administrative Document</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>Other Administrative Document class doesn't have a default workflow.
+      <h5>Price List</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Product or service</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1040</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Price List class doesn't have a default workflow.
+      <h5>Operating Procedure</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font></td><td /></tr></table><h6>Workflow</h6>Operating Procedure class doesn't have a default workflow.
+      <h5>Meeting Minutes</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Event date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1010</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Meeting type</td><td>MultiSelectLookup
+        (Meeting types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1017</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Meeting Minutes class doesn't have a default workflow.
+      <h5>Agenda</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Event date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1010</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Meeting type</td><td>MultiSelectLookup
+        (Meeting types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1017</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Agenda class doesn't have a default workflow.
+      <h5>Meeting Notice</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Event date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1010</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Meeting type</td><td>MultiSelectLookup
+        (Meeting types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1017</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Meeting Notice class doesn't have a default workflow.
+      <h5>Request for Proposal</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Request for Proposal class doesn't have a default workflow.
+      <h5>Other Marketing Material</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Product or service</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1040</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Other Marketing Material class doesn't have a default workflow.
+      <h5>Brochure or Ad</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Product or service</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1040</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Brochure or Ad class doesn't have a default workflow.
+      <h5>Other HR Document</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Employee</td><td>MultiSelectLookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1132</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>Other HR Document class doesn't have a default workflow.
+      <h5>Order</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Order class doesn't have a default workflow.
+      <h5>Confirmation of Order</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Confirmation of Order class doesn't have a default workflow.
+      <h5>Proof of Employment</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Employee</td><td>MultiSelectLookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1132</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>Proof of Employment class doesn't have a default workflow.
+      <h5>Employment Agreement</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Employment agreement title</td><td>Text</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1104</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Employee</td><td>MultiSelectLookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1132</td></tr><tr><td>Effective through</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1096</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Employee.M-Files user</font><br /></td><td><font class="green">read</font></td><td /></tr><tr><td><font class="pseudouser">Employee.Supervisor.M-Files user</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font></td><td /></tr></table><h6>Workflow</h6>Employment Agreement class doesn't have a default workflow.
+      <h5>Notice of Layoff or Termination</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Employee</td><td>MultiSelectLookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1132</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>Notice of Layoff or Termination class doesn't have a default workflow.
+      <h5>Job Application or CV</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Job opening</td><td>MultiSelectLookup
+        (Job openings)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1091</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>
+          Objects in <font class="highlight">Job Application or CV</font> class are, by default, placed into the <font class="highlight">Processing job applications</font> workflow.
+        <h5>Statement</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1079</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Statement class doesn't have a default workflow.
+      <h5>Bulletin or Press Release</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1079</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Bulletin or Press Release class doesn't have a default workflow.
+      <h5>Message or Letter</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1079</td></tr><tr><td>Contact person</td><td>MultiSelectLookup
+        (Contact persons)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1081</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Message or Letter class doesn't have a default workflow.
+      <h5>Financial Statement</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Automatic Permissions</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h6>Workflow</h6>Financial Statement class doesn't have a default workflow.
+      <h5>Document</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Document class doesn't have a default workflow.
+      <h5>Picture</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Picture class doesn't have a default workflow.
+      <h5>Drawing</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Drawing type</td><td>MultiSelectLookup
+        (Drawing types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1100</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Revision number</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1101</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>
+          Objects in <font class="highlight">Drawing</font> class are, by default, placed into the <font class="highlight">Reviewing drawings</font> workflow.
+        <h5>Sales Invoice</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Invoice title</td><td>Text</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1111</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1002</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Sales Invoice class doesn't have a default workflow.
+      <h5>Project Plan</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1078</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Project Plan class doesn't have a default workflow.
+      <h5>Report</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Project</td><td>MultiSelectLookup
+        (Projects)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1078</td></tr><tr><td>Report type</td><td>Lookup
+        (Report types)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1140</td></tr><tr><td>Document date</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>1002</td></tr><tr><td>Keywords</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1004</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Report class doesn't have a default workflow.
+      <h5>Memo</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Description</td><td>MultiLineText</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1034</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Memo class doesn't have a default workflow.
+      <br style="page-break-before:always" />
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+      
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    <h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\10\Default.ico" />Assignment</h3><h4>Classes</h4><h5>Assignment</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Assignment description</td><td>MultiLineText</td><td class="center" /><td class="center" /><td class="center" /><td>41</td></tr><tr><td>Assigned to</td><td>MultiSelectLookup
+        (Users)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>44</td></tr><tr><td>Marked as complete by</td><td>MultiSelectLookup
+        (Users)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>45</td></tr><tr><td>Deadline</td><td>Date</td><td class="center" /><td class="center" /><td class="center" /><td>42</td></tr><tr><td>Monitored by</td><td>MultiSelectLookup
+        (Users)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>43</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Assignment class doesn't have a default workflow.
+      <br style="page-break-before:always" /><h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\15\Default.ico" />Report</h3><h4>Classes</h4><h5>Report</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Report URL</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>87</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Report class doesn't have a default workflow.
+      <br style="page-break-before:always" />
+      
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+      
+        
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+      
+      
+    <h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\101\Default.ico" />Project</h3><h4>Classes</h4><h5><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\Classes\1-85\Default.ico" />Internal Project</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Project manager</td><td>Lookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1094</td></tr><tr><td>In progress</td><td>Boolean</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1095</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Internal Project class doesn't have a default workflow.
+      <h5><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\Classes\1-80\Default.ico" />Customer Project</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Name or title</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>0</td></tr><tr><td>Customer</td><td>MultiSelectLookup
+        (Customers)
+      </td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1079</td></tr><tr><td>Contact person</td><td>MultiSelectLookup
+        (Contact persons)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1081</td></tr><tr><td>Project manager</td><td>Lookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1094</td></tr><tr><td>In progress</td><td>Boolean</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1095</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Customer Project class doesn't have a default workflow.
+      <br style="page-break-before:always" />
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    <h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\136\Default.ico" />Customer</h3><h4>Classes</h4><h5>Customer</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Customer name</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1110</td></tr><tr><td>Address (line 1)</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1073</td></tr><tr><td>Address (line 2)</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1082</td></tr><tr><td>City</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1088</td></tr><tr><td>State/province</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1089</td></tr><tr><td>ZIP/postal code</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1087</td></tr><tr><td>Country</td><td>MultiSelectLookup
+        (Countries)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1090</td></tr><tr><td>Telephone number</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1085</td></tr><tr><td>Web site</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1086</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Customer class doesn't have a default workflow.
+      <br style="page-break-before:always" /><h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\149\Default.ico" />Contact person</h3><h4>Classes</h4><h5>Contact Person</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Full name</td><td>Text</td><td class="center">X</td><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1107</td></tr><tr><td>First name</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1105</td></tr><tr><td>Last name</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1106</td></tr><tr><td>Job title</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1092</td></tr><tr><td>Telephone number</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1085</td></tr><tr><td>E-mail address</td><td>Text</td><td class="center" /><td class="center" /><td class="center" /><td>1060</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Contact Person class doesn't have a default workflow.
+      <br style="page-break-before:always" />
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    <h3><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\ObjectTypes\156\Default.ico" />Employee</h3><h4>Classes</h4><h5>Employee</h5><h6>
+      Associated Properties
+    </h6><table><th>Name</th><th>Datatype</th><th>Automatic</th><th>Required</th><th>Name Property</th><th>ID</th><tr><td>Employee name</td><td>Text</td><td class="center" /><td class="center">
+                X
+              </td><td class="center">
+                X
+              </td><td>1138</td></tr><tr><td>Department</td><td>Lookup
+        (Departments)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1136</td></tr><tr><td>Supervisor</td><td>Lookup
+        (Employees)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1133</td></tr><tr><td>M-Files user</td><td>Lookup
+        (Users)
+      </td><td class="center" /><td class="center" /><td class="center" /><td>1134</td></tr><tr><td>Is supervisor?</td><td>Boolean</td><td class="center" /><td class="center">
+                X
+              </td><td class="center" /><td>1137</td></tr></table><h6>Access Control</h6><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="green">see</font>, <font class="green">attachobjects</font></td><td /></tr></table><h6>Workflow</h6>Employee class doesn't have a default workflow.
+      <br style="page-break-before:always" />
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    
+      
+        
+      
+      
+      
+        
+      
+      
+        
+      
+      
+      
+      
+    <h2>Property Definitions</h2><p>The system contains the following property definitions. Scripts related to the property definitions are presented in the appendices.</p><table><tr><th>Name</th><th>Datatype</th><th>Automatic</th><th>Validate</th><th>Read Access</th><th>Edit Access</th><th>ID</th></tr><tr><td>Accepted</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1098</td></tr><tr><td>Accessed by me</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>81</td></tr><tr><td>Additional classes</td><td>
+            Choose from Classes (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>36</td></tr><tr><td>Address (line 1)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1073</td></tr><tr><td>Address (line 2)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1082</td></tr><tr><td>Agreement title</td><td>Text</td><td>
+            VBScript/Calc
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1144</td></tr><tr><td>Agreement type</td><td>
+            Choose from Agreement types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1143</td></tr><tr><td>Assigned to</td><td>
+            Choose from Users (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>44</td></tr><tr><td>Assignment</td><td>
+            Choose from Assignments (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1127</td></tr><tr><td>Assignment description</td><td>MultiLineText</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>41</td></tr><tr><td>City</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1088</td></tr><tr><td>Class</td><td>
+            Choose from Classes</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>100</td></tr><tr><td>Class groups</td><td>
+            Choose from Class groups (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>101</td></tr><tr><td>Collection members (document collections)</td><td>
+            Choose from Document collections (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>47</td></tr><tr><td>Collection members (documents)</td><td>
+            Choose from Documents (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>46</td></tr><tr><td>Comment</td><td>MultiLineText</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>33</td></tr><tr><td>Conflict resolved</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>96</td></tr><tr><td>Contact person</td><td>
+            Choose from Contact persons (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1081</td></tr><tr><td>Country</td><td>
+            Choose from Countries (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1090</td></tr><tr><td>Created</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>20</td></tr><tr><td>Created by</td><td>
+            Choose from Users</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>25</td></tr><tr><td>Created from external location</td><td>
+            Choose from External sources</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>35</td></tr><tr><td>Customer</td><td>
+            Choose from Customers (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1079</td></tr><tr><td>Customer name</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1110</td></tr><tr><td>Deadline</td><td>Date</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>42</td></tr><tr><td>Deleted</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>27</td></tr><tr><td>Deleted by</td><td>
+            Choose from Users</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>28</td></tr><tr><td>Deletion status changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>93</td></tr><tr><td>Department</td><td>
+            Choose from Departments</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1136</td></tr><tr><td>Description</td><td>MultiLineText</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1034</td></tr><tr><td>Description2</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1153</td></tr><tr><td>Description2</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1154</td></tr><tr><td>Document</td><td>
+            Choose from Documents (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1076</td></tr><tr><td>Document collection</td><td>
+            Choose from Document collections (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1077</td></tr><tr><td>Document date</td><td>Date</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1002</td></tr><tr><td>Drawing type</td><td>
+            Choose from Drawing types (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1100</td></tr><tr><td>Effective through</td><td>Date</td><td /><td class="center">
+          X
+        </td><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1096</td></tr><tr><td>E-mail address</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1060</td></tr><tr><td>Employee</td><td>
+            Choose from Employees (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1132</td></tr><tr><td>Employee name</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1138</td></tr><tr><td>Employment agreement title</td><td>Text</td><td>
+            Concatenation
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1104</td></tr><tr><td>Event date</td><td>Date</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1010</td></tr><tr><td>Favorite view</td><td>Integer</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>82</td></tr><tr><td>First name</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1105</td></tr><tr><td>Full name</td><td>Text</td><td>
+            VBScript/Calc
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1107</td></tr><tr><td>In progress</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1095</td></tr><tr><td>Invoice title</td><td>Text</td><td>
+            Concatenation
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1111</td></tr><tr><td>Is supervisor?</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1137</td></tr><tr><td>Is template</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>37</td></tr><tr><td>Job opening</td><td>
+            Choose from Job openings (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1091</td></tr><tr><td>Job title</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1092</td></tr><tr><td>Keywords</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1004</td></tr><tr><td>Last modified</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>21</td></tr><tr><td>Last modified by</td><td>
+            Choose from Users</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>23</td></tr><tr><td>Last name</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1106</td></tr><tr><td>Location</td><td>
+            Choose from Sources</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>103</td></tr><tr><td>Marked as complete by</td><td>
+            Choose from Users (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>45</td></tr><tr><td>Marked as rejected by</td><td>
+            Choose from Users (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>97</td></tr><tr><td>Marked for archiving</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td /><td>32</td></tr><tr><td>Meeting type</td><td>
+            Choose from Meeting types (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1017</td></tr><tr><td>Message ID</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>83</td></tr><tr><td>M-Files user</td><td>
+            Choose from Users</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1134</td></tr><tr><td>Monitored by</td><td>
+            Choose from Users (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>43</td></tr><tr><td>Moved into current state</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>40</td></tr><tr><td>Name or title</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>0</td></tr><tr><td>Object changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>89</td></tr><tr><td>Original path (1/3)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>75</td></tr><tr><td>Original path (2/3)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>77</td></tr><tr><td>Original path (3/3)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>78</td></tr><tr><td>Owner</td><td>
+            Choose from Employees</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1141</td></tr><tr><td>Owner (Agreement type)</td><td>
+            Choose from Agreement types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1142</td></tr><tr><td>Owner (Assignment)</td><td>
+            Choose from Assignments</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1126</td></tr><tr><td>Owner (Class group)</td><td>
+            Choose from Class groups</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1119</td></tr><tr><td>Owner (Class)</td><td>
+            Choose from Classes</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1113</td></tr><tr><td>Owner (Contact person)</td><td>
+            Choose from Contact persons</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1059</td></tr><tr><td>Owner (Country)</td><td>
+            Choose from Countries</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1114</td></tr><tr><td>Owner (Customer)</td><td>
+            Choose from Customers</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1058</td></tr><tr><td>Owner (Department)</td><td>
+            Choose from Departments</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1135</td></tr><tr><td>Owner (Document collection)</td><td>
+            Choose from Document collections</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1057</td></tr><tr><td>Owner (Document)</td><td>
+            Choose from Documents</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1056</td></tr><tr><td>Owner (Drawing type)</td><td>
+            Choose from Drawing types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1125</td></tr><tr><td>Owner (Employee)</td><td>
+            Choose from Employees</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1117</td></tr><tr><td>Owner (External source)</td><td>
+            Choose from External sources</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1122</td></tr><tr><td>Owner (Job opening)</td><td>
+            Choose from Job openings</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1115</td></tr><tr><td>Owner (Meeting type)</td><td>
+            Choose from Meeting types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1118</td></tr><tr><td>Owner (Project)</td><td>
+            Choose from Projects</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1063</td></tr><tr><td>Owner (Report type)</td><td>
+            Choose from Report types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1139</td></tr><tr><td>Owner (Report)</td><td>
+            Choose from Reports</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1129</td></tr><tr><td>Owner (Source)</td><td>
+            Choose from Sources</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1146</td></tr><tr><td>Owner (State transition)</td><td>
+            Choose from State transitions</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1145</td></tr><tr><td>Owner (State)</td><td>
+            Choose from Workflow States</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1124</td></tr><tr><td>Owner (Traditional folder)</td><td>
+            Choose from Traditional folders</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1121</td></tr><tr><td>Owner (User group)</td><td>
+            Choose from User groups</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1131</td></tr><tr><td>Owner (User)</td><td>
+            Choose from Users</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1116</td></tr><tr><td>Owner (Version label)</td><td>
+            Choose from Version labels</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1120</td></tr><tr><td>Owner (Workflow)</td><td>
+            Choose from Workflows</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1123</td></tr><tr><td>Permissions changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>90</td></tr><tr><td>Product or service</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1040</td></tr><tr><td>Project</td><td>
+            Choose from Projects (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1078</td></tr><tr><td>Project manager</td><td>
+            Choose from Employees</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1094</td></tr><tr><td>Proposal number</td><td>Integer</td><td>
+            Simple Num
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1103</td></tr><tr><td>Proposal title</td><td>Text</td><td>
+            Concatenation
+          </td><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1102</td></tr><tr><td>Reference</td><td>
+            Choose from Documents (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>76</td></tr><tr><td>Remote vault GUID</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>94</td></tr><tr><td>Reply to</td><td>
+            Choose from Documents (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>85</td></tr><tr><td>Reply to (ID)</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>84</td></tr><tr><td>Report</td><td>
+            Choose from Reports (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1130</td></tr><tr><td>Report placement</td><td>Integer</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>88</td></tr><tr><td>Report type</td><td>
+            Choose from Report types</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1140</td></tr><tr><td>Report URL</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>87</td></tr><tr><td>Repository</td><td>
+            Choose from Sources</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>102</td></tr><tr><td>Revision number</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1101</td></tr><tr><td>Signature manifestation</td><td>MultiLineText</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td /><td>86</td></tr><tr><td>Single file</td><td>Boolean</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>22</td></tr><tr><td>Size on server (all versions)</td><td>Integer</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>31</td></tr><tr><td>Size on server (this version)</td><td>Integer</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>30</td></tr><tr><td>State/province</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1089</td></tr><tr><td>Status changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>24</td></tr><tr><td>Supervisor</td><td>
+            Choose from Employees
+          where Is supervisor? = true</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1133</td></tr><tr><td>Telephone number</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1085</td></tr><tr><td>Traditional folder</td><td>
+            Choose from Traditional folders (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>34</td></tr><tr><td>Version comment changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>92</td></tr><tr><td>Version label</td><td>
+            Choose from Version labels (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>29</td></tr><tr><td>Version label changed</td><td>Timestamp</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>91</td></tr><tr><td>Web site</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1086</td></tr><tr><td>Workflow</td><td>
+            Choose from Workflows</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>38</td></tr><tr><td>Workflow Assignment</td><td>
+            Choose from Assignments (multi-select)
+          </td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>79</td></tr><tr><td>Workflow State</td><td>
+            Choose from Workflow States</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>39</td></tr><tr><td>ZIP/postal code</td><td>Text</td><td /><td class="center" /><td><font class="usergroup">All internal and external users</font><br /></td><td><font class="usergroup">All internal and external users</font><br /></td><td>1087</td></tr></table><br style="page-break-before:always" /><h2>Workflows</h2><p>Workflows model the real world processes. The system contains the following workflows.</p><table><tr><th class="wide">Name</th><th>Aliases</th><th>Tied to class</th><th>ID</th></tr><tr><td>Reviewing and accepting purchase invoices</td><td></td><td>Purchase Invoice</td><td>102</td></tr><tr><td>Processing job applications</td><td></td><td /><td>105</td></tr><tr><td>Reviewing drawings</td><td></td><td>Drawing</td><td>106</td></tr><tr><td>Contract Approval Workflow</td><td></td><td /><td>107</td></tr></table><br style="page-break-before:always" /><h3>Reviewing and accepting purchase invoices</h3><p></p><table><tr><th rowspan="2" colspan="2">State</th><th colspan="7">Actions</th><th rowspan="2">ID</th></tr><tr><th>Delete</th><th>Permissions</th><th>Assignment</th><th>Notification</th><th>Set Properties</th><th>Convert to PDF</th><th>Script</th></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-108\Default.ico" /></td><td class="name">Received, awaiting checking</td><td class="center" /><td class="center">X</td><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>108</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-109\Default.ico" /></td><td class="name">Checked, awaiting approval</td><td class="center" /><td class="center" /><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>109</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-110\Default.ico" /></td><td class="name">Approved</td><td class="center" /><td class="center" /><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>110</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-112\Default.ico" /></td><td class="name">Paid</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>112</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-111\Default.ico" /></td><td class="name">Rejected</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>111</td></tr></table><p>
+      Workflow visibility:
+      <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">see</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-108\Default.ico" />Received, awaiting checking</h4><p class="small">
+      State ID: 108</p><p>The invoice has been stored in the system and is awaiting checking.</p><p>
+          The document is assigned to the following users or user groups:
+          <ul class="userlist"><li /></ul>
+          with the following assignment description:
+        </p><p class="quote">A new invoice is awaiting checking.</p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-109\Default.ico" />Checked, awaiting approval</h4><p class="small">
+      State ID: 109</p><p>The invoice has been checked and is now awaiting final approval.</p><p>
+          The document is assigned to the following users or user groups:
+          <ul class="userlist"><li><font class="usergroup">Managers</font></li></ul>
+          with the following assignment description:
+        </p><p class="quote">A new invoice is awaiting approval.</p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-110\Default.ico" />Approved</h4><p class="small">
+      State ID: 110</p><p>
+          The document is assigned to the following users or user groups:
+          <ul class="userlist"><li /></ul>
+          with the following assignment description:
+        </p><p class="quote">An invoice has been approved and is awaiting payment.</p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-112\Default.ico" />Paid</h4><p class="small">
+      State ID: 112</p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-111\Default.ico" />Rejected</h4><p class="small">
+      State ID: 111</p><h4>
+      State transitions for Reviewing and accepting purchase invoices</h4><table><tr><th>From State</th><th>To State</th><th>Name</th><th>Allowed To</th><th>Signature</th><th>Trigger</th></tr><tr><td>(no state)</td><td>Received, awaiting checking</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Received, awaiting checking</td><td>Checked, awaiting approval</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Checked, awaiting approval</td><td>Approved</td><td></td><td>
+      
+        <font class="usergroup">Managers</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Paid</td><td></td><td>
+      
+        <font class="usergroup">Managers</font><br />
+        <font class="user">Kimberley Miller</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Received, awaiting checking</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Checked, awaiting approval</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">Managers</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">Managers</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr></table><br style="page-break-before:always" /><h3>Processing job applications</h3><p></p><table><tr><th rowspan="2" colspan="2">State</th><th colspan="7">Actions</th><th rowspan="2">ID</th></tr><tr><th>Delete</th><th>Permissions</th><th>Assignment</th><th>Notification</th><th>Set Properties</th><th>Convert to PDF</th><th>Script</th></tr><tr><td class="icon" /><td class="name">Job application received, awaiting review</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>128</td></tr><tr><td class="icon" /><td class="name">Applicant selected for interview</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>129</td></tr><tr><td class="icon" /><td class="name">Interview scheduled</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>130</td></tr><tr><td class="icon" /><td class="name">Interview held</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>131</td></tr><tr><td class="icon" /><td class="name">Applicant proposed for hiring</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>132</td></tr><tr><td class="icon" /><td class="name">Applicant not selected</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>133</td></tr><tr><td class="icon" /><td class="name">Applicant withdrew</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>134</td></tr></table><p>
+      Workflow visibility:
+      <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">see</font></td><td /></tr></table></p><h4>Job application received, awaiting review</h4><p class="small">
+      State ID: 128</p><h4>Applicant selected for interview</h4><p class="small">
+      State ID: 129</p><h4>Interview scheduled</h4><p class="small">
+      State ID: 130</p><h4>Interview held</h4><p class="small">
+      State ID: 131</p><h4>Applicant proposed for hiring</h4><p class="small">
+      State ID: 132</p><h4>Applicant not selected</h4><p class="small">
+      State ID: 133</p><h4>Applicant withdrew</h4><p class="small">
+      State ID: 134</p><h4>
+      State transitions for Processing job applications</h4><table><tr><th>From State</th><th>To State</th><th>Name</th><th>Allowed To</th><th>Signature</th><th>Trigger</th></tr><tr><td>(no state)</td><td>Job application received, awaiting review</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Job application received, awaiting review</td><td>Applicant selected for interview</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview held</td><td>Applicant proposed for hiring</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Job application received, awaiting review</td><td>Applicant not selected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Applicant selected for interview</td><td>Applicant not selected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview held</td><td>Applicant not selected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Job application received, awaiting review</td><td>Applicant withdrew</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Applicant selected for interview</td><td>Applicant withdrew</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview held</td><td>Applicant withdrew</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Applicant proposed for hiring</td><td>Applicant withdrew</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Applicant selected for interview</td><td>Interview scheduled</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview scheduled</td><td>Interview held</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview scheduled</td><td>Applicant not selected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Interview scheduled</td><td>Applicant withdrew</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr></table><br style="page-break-before:always" /><h3>Reviewing drawings</h3><p>Any drawings submitted need to be approved.</p><table><tr><th rowspan="2" colspan="2">State</th><th colspan="7">Actions</th><th rowspan="2">ID</th></tr><tr><th>Delete</th><th>Permissions</th><th>Assignment</th><th>Notification</th><th>Set Properties</th><th>Convert to PDF</th><th>Script</th></tr><tr><td class="icon" /><td class="name">Listed for approval</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>135</td></tr><tr><td class="icon" /><td class="name">Approved</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>136</td></tr></table><p>
+      Workflow visibility:
+      <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">see</font></td><td /></tr></table></p><h4>Listed for approval</h4><p class="small">
+      State ID: 135</p><h4>Approved</h4><p class="small">
+      State ID: 136</p><h4>
+      State transitions for Reviewing drawings</h4><table><tr><th>From State</th><th>To State</th><th>Name</th><th>Allowed To</th><th>Signature</th><th>Trigger</th></tr><tr><td>(no state)</td><td>Listed for approval</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Listed for approval</td><td>Approved</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Listed for approval</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr></table><br style="page-break-before:always" /><h3>Contract Approval Workflow</h3><p></p><table><tr><th rowspan="2" colspan="2">State</th><th colspan="7">Actions</th><th rowspan="2">ID</th></tr><tr><th>Delete</th><th>Permissions</th><th>Assignment</th><th>Notification</th><th>Set Properties</th><th>Convert to PDF</th><th>Script</th></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-137\Default.ico" /></td><td class="name">Draft</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>137</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-138\Default.ico" /></td><td class="name">Waiting for Approval</td><td class="center" /><td class="center">X</td><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td class="center" /><td>138</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-139\Default.ico" /></td><td class="name">Approved</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center">X</td><td class="center" /><td>139</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-140\Default.ico" /></td><td class="name">Expired</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td>140</td></tr><tr><td class="icon"><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-141\Default.ico" /></td><td class="name">Rejected</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center">X</td><td class="center" /><td class="center" /><td class="center" /><td>141</td></tr></table><p>
+      Workflow visibility:
+      <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">see</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-137\Default.ico" />Draft</h4><p class="small">
+      State ID: 137</p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-138\Default.ico" />Waiting for Approval</h4><p class="small">
+      State ID: 138</p><p>
+        The following criteria must be fulfilled before entering the state:
+        M-Files user is not empty</p><p>
+          The document is assigned to the following users or user groups:
+          <ul class="userlist"><li><font class="pseudouser">Owner.M-Files user</font></li></ul>
+          with the following assignment description:
+        </p><p class="quote">A new contract is awaiting approval.</p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Owner.M-Files user</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-139\Default.ico" />Approved</h4><p class="small">
+      State ID: 139</p><p>
+          A notification is sent via email to the following users or user groups:
+          <ul class="userlist"><li><font class="pseudouser">Created by</font></li></ul>
+          with the following content:
+        </p><p class="quote">
+          Subject: %OBJTITLE% approved<br />
+          Body: <A HREF='%MFILESURL%'>%OBJTITLE%</A> has been approved by %CAUSEDBY% in M-Files.</p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Owner.M-Files user</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-140\Default.ico" />Expired</h4><p class="small">
+      State ID: 140</p><p>
+          A notification is sent via email to the following users or user groups:
+          <ul class="userlist"><li><font class="pseudouser">Created by</font></li></ul>
+          with the following content:
+        </p><p class="quote">
+          Subject: %OBJTITLE% approved<br />
+          Body: </p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4><img class="icon" src="C:\PROJECTS-PERSONAL\practical-m-files\src\metadata-structure\Sample Vault_20211113095658\Metadata\AdditionalData\States\8-141\Default.ico" />Rejected</h4><p class="small">
+      State ID: 141</p><p>
+          A notification is sent via email to the following users or user groups:
+          <ul class="userlist"><li><font class="pseudouser">Created by</font></li></ul>
+          with the following content:
+        </p><p class="quote">
+          Subject: %OBJTITLE% rejected<br />
+          Body: <A HREF='%MFILESURL%'>%OBJTITLE%</A> has been rejected by %CAUSEDBY% in M-Files.</p><p>
+          The following permissions are set:
+          <table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Owner.M-Files user</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table></p><h4>
+      State transitions for Contract Approval Workflow</h4><table><tr><th>From State</th><th>To State</th><th>Name</th><th>Allowed To</th><th>Signature</th><th>Trigger</th></tr><tr><td>(no state)</td><td>Draft</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Draft</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Rejected</td><td>Draft</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Expired</td><td>Draft</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Expired</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Draft</td><td>Waiting for Approval</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Waiting for Approval</td><td>Rejected</td><td></td><td>
+      
+        <font class="pseudouser">Owner.M-Files user</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Waiting for Approval</td><td>Approved</td><td></td><td>
+      
+        <font class="pseudouser">Owner.M-Files user</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Draft</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Rejected</td><td></td><td>
+      
+        <font class="usergroup">All internal users</font><br />
+      
+    </td><td class="center" /><td class="left" /></tr><tr><td>Approved</td><td>Expired</td><td></td><td>
+      
+    </td><td class="center" /><td class="left">
+              Criteria fulfilled:
+              DaysTo(
+              Effective through ) &lt; 0</td></tr></table><br style="page-break-before:always" /><h2>Named Access Control Lists</h2><p>Named access control lists are predefined lists of access control definitions. The system contains the following named access control lists.</p><table><tr><th>Name</th><th>Aliases</th><th>ID</th></tr><tr><td>Visible to company management only</td><td></td><td>1</td></tr><tr><td>Visible to HR department and creator only</td><td></td><td>2</td></tr><tr><td>Visible to company management and creator only</td><td></td><td>9</td></tr><tr><td>Full control for all internal users</td><td></td><td>-1</td></tr><tr><td>Only for me</td><td></td><td>-20</td></tr><tr><td>Operating Procedure</td><td></td><td>10</td></tr><tr><td>Employment Agreement</td><td></td><td>11</td></tr></table><br style="page-break-before:always" /><h4>Visible to company management only</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h4>Visible to HR department and creator only</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h4>Visible to company management and creator only</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h4>Full control for all internal users</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h4>Only for me</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="user">
+            (current user)
+          </font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr></table><h4>Operating Procedure</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">Managers</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="usergroup">All internal users</font><br /></td><td><font class="green">read</font></td><td /></tr></table><h4>Employment Agreement</h4><table><tr><th>User or User Group</th><th>Allowed</th><th>Denied</th></tr><tr><td><font class="usergroup">HR Department</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Created by</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font>, <font class="green">changepermissions</font>, <font class="green">delete</font></td><td /></tr><tr><td><font class="pseudouser">Employee.M-Files user</font><br /></td><td><font class="green">read</font></td><td /></tr><tr><td><font class="pseudouser">Employee.Supervisor.M-Files user</font><br /></td><td><font class="green">read</font>, <font class="green">edit</font></td><td /></tr></table><br style="page-break-before:always" /><h2>Value Lists</h2><table><tr><th colspan="2">Name</th><th>Name (plural)</th><th>Aliases</th><th>Owner</th><th>External</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Meeting type</td><td>Meeting types</td><td></td><td></td><td class="center" /><td>104</td></tr><tr><td class="icon" /><td class="name">Country</td><td>Countries</td><td></td><td></td><td class="center" /><td>154</td></tr><tr><td class="icon" /><td class="name">Job opening</td><td>Job openings</td><td></td><td></td><td class="center" /><td>155</td></tr><tr><td class="icon" /><td class="name">Drawing type</td><td>Drawing types</td><td></td><td></td><td class="center" /><td>157</td></tr><tr><td class="icon" /><td class="name">Department</td><td>Departments</td><td></td><td></td><td class="center" /><td>158</td></tr><tr><td class="icon" /><td class="name">Report type</td><td>Report types</td><td></td><td></td><td class="center" /><td>159</td></tr><tr><td class="icon" /><td class="name">Agreement type</td><td>Agreement types</td><td></td><td></td><td class="center" /><td>160</td></tr></table><br style="page-break-before:always" /><h2>User Groups</h2><table><tr><th>Name</th><th>Aliases</th><th>External</th><th>New User License</th><th>Sync</th><th>ID</th></tr><tr><td>All internal users</td><td></td><td /><td /><td class="center" /><td>1</td></tr><tr><td>Managers</td><td></td><td /><td /><td class="center" /><td>102</td></tr><tr><td>All internal and external users</td><td></td><td /><td /><td class="center" /><td>2</td></tr><tr><td>HR Department</td><td></td><td /><td /><td class="center" /><td>107</td></tr></table><br style="page-break-before:always" /><h2>Event Handlers</h2><p>This chapter contains an overview of all event handlers in the system. The actual scripts are presented in the appendices, except for QMS/Compliance Kit event handlers. QMS/Compliance Kit event handlers are maintained by the application, so they are not considered as configuration.</p><table><tr><th class="wide">Name</th><th>Type</th></tr><tr><td class="wide">SampleVaultApplication.MFEventHandlerBeforeCheckInChangesFinalize</td><td>BeforeCheckInChangesFinalize</td></tr><tr><td class="wide">GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication.MFEventHandlerBeforeCheckInChangesFinalize</td><td>BeforeCheckInChangesFinalize</td></tr><tr><td class="wide">SampleVaultApplication.MFEventHandlerVaultExtensionMethod</td><td>VaultExtensionMethod</td></tr><tr><td class="wide">GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication.MFEventHandlerVaultExtensionMethod</td><td>VaultExtensionMethod</td></tr></table><br style="page-break-before:always" /><h2>Appendices</h2><h3>Value List Items</h3><h4>Meeting types</h4><p class="small">
+        Value list ID: 104</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Board meeting</td><td></td><td>1</td></tr><tr><td class="icon" /><td class="name">General meeting</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">Marketing meeting</td><td></td><td>6</td></tr><tr><td class="icon" /><td class="name">Other meeting</td><td></td><td>8</td></tr><tr><td class="icon" /><td class="name">Project meeting</td><td></td><td>3</td></tr><tr><td class="icon" /><td class="name">Staff meeting</td><td></td><td>7</td></tr></table><h4>Countries</h4><p class="small">
+        Value list ID: 154</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Canada</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">China</td><td></td><td>6</td></tr><tr><td class="icon" /><td class="name">France</td><td></td><td>5</td></tr><tr><td class="icon" /><td class="name">Germany</td><td></td><td>4</td></tr><tr><td class="icon" /><td class="name">United Kingdom</td><td></td><td>3</td></tr><tr><td class="icon" /><td class="name">USA</td><td></td><td>1</td></tr></table><h4>Job openings</h4><p class="small">
+        Value list ID: 155</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Sales Assistant / November 2004</td><td></td><td>1</td></tr><tr><td class="icon" /><td class="name">Software Engineer / March 2007</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">Software Engineer / May 2005</td><td></td><td>3</td></tr></table><h4>Drawing types</h4><p class="small">
+        Value list ID: 157</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Architectural</td><td></td><td>1</td></tr><tr><td class="icon" /><td class="name">Electrical</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">Mechanical</td><td></td><td>3</td></tr><tr><td class="icon" /><td class="name">Services</td><td></td><td>5</td></tr><tr><td class="icon" /><td class="name">Structural</td><td></td><td>4</td></tr></table><h4>Departments</h4><p class="small">
+        Value list ID: 158</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Administration</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">IT</td><td></td><td>6</td></tr><tr><td class="icon" /><td class="name">IT</td><td></td><td>7</td></tr><tr><td class="icon" /><td class="name">IT</td><td></td><td>8</td></tr><tr><td class="icon" /><td class="name">Marketing</td><td></td><td>4</td></tr><tr><td class="icon" /><td class="name">Production</td><td></td><td>3</td></tr><tr><td class="icon" /><td class="name">Sales</td><td></td><td>1</td></tr></table><h4>Report types</h4><p class="small">
+        Value list ID: 159</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Audit Report</td><td></td><td>1</td></tr><tr><td class="icon" /><td class="name">Progress Report</td><td></td><td>3</td></tr><tr><td class="icon" /><td class="name">Risk Analysis</td><td></td><td>2</td></tr></table><h4>Agreement types</h4><p class="small">
+        Value list ID: 160</p><table><tr><th class="name" colspan="2">Item</th><th>Owner</th><th>ID</th></tr><tr><td class="icon" /><td class="name">Non-disclosure Agreement</td><td></td><td>1</td></tr><tr><td class="icon" /><td class="name">Project Agreement</td><td></td><td>2</td></tr><tr><td class="icon" /><td class="name">Reseller Agreement</td><td></td><td>4</td></tr><tr><td class="icon" /><td class="name">Subcontracting Agreement</td><td></td><td>3</td></tr></table><br style="page-break-before:always" /><h3>Event Handlers</h3><h4>SampleVaultApplication.MFEventHandlerVaultExtensionMethod - VaultExtensionMethod</h4><code>' Turn typelib constants loading off.
+<br />' MFILESAPI_CONSTANTS_OFF
+<br />
+<br />'********************************************************
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;M-Files Vault Application Event Handler Script.
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;Transfers the event handling to compiled vault application assembly.
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;DO NOT MODIFY!
+<br />'
+<br />'********************************************************
+<br />
+<br />' Initialize the event handler entry point
+<br />Set extension = GetExtensionObject("SampleVaultApplication", "45472745-9d80-4b42-b092-463f3c38b6f1")
+<br />
+<br />' Initialize a new Script Environment
+<br />Set oEnv = extension.NewEnvironment()
+<br />Call SetupEnvironment(oEnv)
+<br />
+<br />
+<br />' Trigger the handler
+<br />Set oResult = extension.Run(oEnv)
+<br />If oResult.ScriptCancelled Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Err.Raise MFScriptCancel, oResult.Message
+<br />End If
+<br />
+<br />' Pass on any return value.
+<br />Call SetReturnValue(oResult)
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetupEnvironment
+<br />'
+<br />'&nbsp;&nbsp;Transfers all script variables to the environment object.
+<br />' =========================================
+<br />Sub SetupEnvironment(byRef oEnvironment)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Copy all possible auto-set script variables to our ScriptEnvironment object
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Primitives
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Type = 35
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.CurrentUserID = CurrentUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.DisplayID = DisplayID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.LoggedOutUserID = LoggedOutUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Input = Input.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.FileTransferSession = FileTransferSession.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.IsCancellable = IsCancellable.Value
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;'Complex
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.FileVer = FileVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.LoginAccount = LoginAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjectAccessControlList = ObjectAccessControlList
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjVer = ObjVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.PropertyValues = PropertyValues
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ValueListItem = ValueListItem
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.Vault = Vault
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.VaultSharedVariables = VaultSharedVariables
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserAccount = UserAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserGroupAdmin = UserGroupAdmin
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentTransactionID = CurrentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ParentTransactionID = ParentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.MasterTransactionID = MasterTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ActivityID = ActivityID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.TransactionCache = TransactionCache
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.View = View
+<br />&nbsp;&nbsp;&nbsp;&nbsp;If IsEmpty( CurrentUserSessionInfo ) Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = Null
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = CurrentUserSessionInfo
+<br />&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />End Sub
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetReturnValue
+<br />'
+<br />' =========================================
+<br />Sub SetReturnValue(byRef oResult)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Output = oResult.VaultExtensionMethodOutput
+<br />End Sub</code><br style="page-break-before:always" /><h4>GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication.MFEventHandlerVaultExtensionMethod - VaultExtensionMethod</h4><code>' Turn typelib constants loading off.
+<br />' MFILESAPI_CONSTANTS_OFF
+<br />
+<br />'********************************************************
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;M-Files Vault Application Event Handler Script.
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;Transfers the event handling to compiled vault application assembly.
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;DO NOT MODIFY!
+<br />'
+<br />'********************************************************
+<br />
+<br />' Initialize the event handler entry point
+<br />Set extension = GetExtensionObject("GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication", "b0f1fc4b-a17e-4f78-a9f9-063e2093b5e9")
+<br />
+<br />' Initialize a new Script Environment
+<br />Set oEnv = extension.NewEnvironment()
+<br />Call SetupEnvironment(oEnv)
+<br />
+<br />
+<br />' Trigger the handler
+<br />Set oResult = extension.Run(oEnv)
+<br />If oResult.ScriptCancelled Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Err.Raise MFScriptCancel, oResult.Message
+<br />End If
+<br />
+<br />' Pass on any return value.
+<br />Call SetReturnValue(oResult)
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetupEnvironment
+<br />'
+<br />'&nbsp;&nbsp;Transfers all script variables to the environment object.
+<br />' =========================================
+<br />Sub SetupEnvironment(byRef oEnvironment)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Copy all possible auto-set script variables to our ScriptEnvironment object
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Primitives
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Type = 35
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.CurrentUserID = CurrentUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.DisplayID = DisplayID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.LoggedOutUserID = LoggedOutUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Input = Input.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.FileTransferSession = FileTransferSession.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.IsCancellable = IsCancellable.Value
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;'Complex
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.FileVer = FileVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.LoginAccount = LoginAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjectAccessControlList = ObjectAccessControlList
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjVer = ObjVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.PropertyValues = PropertyValues
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ValueListItem = ValueListItem
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.Vault = Vault
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.VaultSharedVariables = VaultSharedVariables
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserAccount = UserAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserGroupAdmin = UserGroupAdmin
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentTransactionID = CurrentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ParentTransactionID = ParentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.MasterTransactionID = MasterTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ActivityID = ActivityID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.TransactionCache = TransactionCache
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.View = View
+<br />&nbsp;&nbsp;&nbsp;&nbsp;If IsEmpty( CurrentUserSessionInfo ) Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = Null
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = CurrentUserSessionInfo
+<br />&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />End Sub
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetReturnValue
+<br />'
+<br />' =========================================
+<br />Sub SetReturnValue(byRef oResult)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Output = oResult.VaultExtensionMethodOutput
+<br />End Sub</code><br style="page-break-before:always" /><h4>SampleVaultApplication.MFEventHandlerBeforeCheckInChangesFinalize - BeforeCheckInChangesFinalize</h4><code>' Turn typelib constants loading off.
+<br />' MFILESAPI_CONSTANTS_OFF
+<br />
+<br />'********************************************************
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;M-Files Vault Application Event Handler Script.
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;Transfers the event handling to compiled vault application assembly.
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;DO NOT MODIFY!
+<br />'
+<br />'********************************************************
+<br />
+<br />' Initialize the event handler entry point
+<br />Set extension = GetExtensionObject("SampleVaultApplication", "45472745-9d80-4b42-b092-463f3c38b6f1")
+<br />
+<br />' Initialize a new Script Environment
+<br />Set oEnv = extension.NewEnvironment()
+<br />Call SetupEnvironment(oEnv)
+<br />
+<br />
+<br />' Trigger the handler
+<br />Set oResult = extension.Run(oEnv)
+<br />If oResult.ScriptCancelled Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Err.Raise MFScriptCancel, oResult.Message
+<br />End If
+<br />
+<br />' Pass on any return value.
+<br />Call SetReturnValue(oResult)
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetupEnvironment
+<br />'
+<br />'&nbsp;&nbsp;Transfers all script variables to the environment object.
+<br />' =========================================
+<br />Sub SetupEnvironment(byRef oEnvironment)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Copy all possible auto-set script variables to our ScriptEnvironment object
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Primitives
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Type = 67
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.CurrentUserID = CurrentUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.DisplayID = DisplayID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.LoggedOutUserID = LoggedOutUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Input = Input.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.FileTransferSession = FileTransferSession.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.IsCancellable = IsCancellable.Value
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;'Complex
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.FileVer = FileVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.LoginAccount = LoginAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjectAccessControlList = ObjectAccessControlList
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjVer = ObjVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.PropertyValues = PropertyValues
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ValueListItem = ValueListItem
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.Vault = Vault
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.VaultSharedVariables = VaultSharedVariables
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserAccount = UserAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserGroupAdmin = UserGroupAdmin
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentTransactionID = CurrentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ParentTransactionID = ParentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.MasterTransactionID = MasterTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ActivityID = ActivityID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.TransactionCache = TransactionCache
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.View = View
+<br />&nbsp;&nbsp;&nbsp;&nbsp;If IsEmpty( CurrentUserSessionInfo ) Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = Null
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = CurrentUserSessionInfo
+<br />&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />End Sub
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetReturnValue
+<br />'
+<br />' =========================================
+<br />Sub SetReturnValue(byRef oResult)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Output = oResult.VaultExtensionMethodOutput
+<br />End Sub</code><br style="page-break-before:always" /><h4>GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication.MFEventHandlerBeforeCheckInChangesFinalize - BeforeCheckInChangesFinalize</h4><code>' Turn typelib constants loading off.
+<br />' MFILESAPI_CONSTANTS_OFF
+<br />
+<br />'********************************************************
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;M-Files Vault Application Event Handler Script.
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;Transfers the event handling to compiled vault application assembly.
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;DO NOT MODIFY!
+<br />'
+<br />'********************************************************
+<br />
+<br />' Initialize the event handler entry point
+<br />Set extension = GetExtensionObject("GeONE.LAB.MFiles.CleanArchitecture.Reference.VaultApplication", "b0f1fc4b-a17e-4f78-a9f9-063e2093b5e9")
+<br />
+<br />' Initialize a new Script Environment
+<br />Set oEnv = extension.NewEnvironment()
+<br />Call SetupEnvironment(oEnv)
+<br />
+<br />
+<br />' Trigger the handler
+<br />Set oResult = extension.Run(oEnv)
+<br />If oResult.ScriptCancelled Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Err.Raise MFScriptCancel, oResult.Message
+<br />End If
+<br />
+<br />' Pass on any return value.
+<br />Call SetReturnValue(oResult)
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetupEnvironment
+<br />'
+<br />'&nbsp;&nbsp;Transfers all script variables to the environment object.
+<br />' =========================================
+<br />Sub SetupEnvironment(byRef oEnvironment)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Copy all possible auto-set script variables to our ScriptEnvironment object
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Primitives
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Type = 67
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.CurrentUserID = CurrentUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.DisplayID = DisplayID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.LoggedOutUserID = LoggedOutUserID.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.Input = Input.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.FileTransferSession = FileTransferSession.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;oEnvironment.IsCancellable = IsCancellable.Value
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;'Complex
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.FileVer = FileVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.LoginAccount = LoginAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjectAccessControlList = ObjectAccessControlList
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ObjVer = ObjVer
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.PropertyValues = PropertyValues
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ValueListItem = ValueListItem
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.Vault = Vault
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.VaultSharedVariables = VaultSharedVariables
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserAccount = UserAccount
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.UserGroupAdmin = UserGroupAdmin
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentTransactionID = CurrentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ParentTransactionID = ParentTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.MasterTransactionID = MasterTransactionID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.ActivityID = ActivityID
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.TransactionCache = TransactionCache
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.View = View
+<br />&nbsp;&nbsp;&nbsp;&nbsp;If IsEmpty( CurrentUserSessionInfo ) Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = Null
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set oEnvironment.CurrentUserSessionInfo = CurrentUserSessionInfo
+<br />&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />End Sub
+<br />
+<br />
+<br />' =========================================
+<br />'
+<br />'&nbsp;&nbsp;&nbsp;&nbsp;SetReturnValue
+<br />'
+<br />' =========================================
+<br />Sub SetReturnValue(byRef oResult)
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' IGNORE ERRORS
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' (they should only come frome trying to set variables that don't
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' exist in this script type, which is expected)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;On Error Resume Next
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Output = oResult.VaultExtensionMethodOutput
+<br />End Sub</code><br style="page-break-before:always" /><br style="page-break-before:always" /><h3>Property Definition Scripts</h3><h4>Effective through - Property Value Validation
+      </h4><p class="small">
+        Property ID: 1096</p><code>' Checks that effective through date is not earlier than document date (Property ID 1002)
+<br />
+<br />Option Explicit
+<br />
+<br />' Get Effective through property value
+<br />Dim dEffectiveThrough: dEffectiveThrough = PropertyValue.Value
+<br />
+<br />' Get properties for this object
+<br />Dim oPropVals: Set oPropVals = CreateObject("MFilesApi.PropertyValues")
+<br />set oPropVals = Vault.ObjectPropertyOperations.GetProperties(ObjVer)
+<br />
+<br />' Check if document date property exists on this object
+<br />If oPropVals.IndexOf( 1002 ) <> - 1 Then
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Get document date property value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Dim dDocumentDate: dDocumentDate = oPropVals.SearchForProperty( 1002 ).TypedValue.Value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;' Check that both Effective through and Document date properties have value
+<br />&nbsp;&nbsp;&nbsp;&nbsp;If isDate(dEffectiveThrough) And isDate(dDocumentDate) Then
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If dEffectiveThrough < dDocumentDate Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Err.Raise MFScriptCancel, "The expiry date cannot be earlier than document date"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;End If
+<br />
+<br />End If</code><br style="page-break-before:always" /><h4>Full name - Calculated Property Value
+      </h4><p class="small">
+        Property ID: 1107</p><code>Option Explicit
+<br />
+<br />' Find the first name and last name properties.
+<br />' The corresponding property definition IDs are 1105 and 1106.
+<br />Dim szFirstName
+<br />szFirstName = PropertyValues.SearchForProperty( 1105 ).TypedValue.Value
+<br />Dim szLastName
+<br />szLastName = PropertyValues.SearchForProperty( 1106 ).TypedValue.Value
+<br />
+<br />' Combine to full name.
+<br />Dim szFullName
+<br />If IsNull( szFirstName ) Then
+<br />&nbsp;&nbsp;&nbsp;&nbsp;szFullName = szLastName&nbsp;&nbsp;' First name not entered.
+<br />Else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;szFullName = szFirstName & " " & szLastName
+<br />End If
+<br />
+<br />' Store the full name in the property.
+<br />Output = szFullName
+<br /></code><br style="page-break-before:always" /><h4>Agreement title - Calculated Property Value
+      </h4><p class="small">
+        Property ID: 1144</p><code>Option Explicit
+<br />Dim szAgreementType, szCustomer, dDocumentDate
+<br />
+<br />szAgreementType = PropertyValues.SearchForProperty( 1143 ).TypedValue.DisplayValue
+<br />szCustomer = PropertyValues.SearchForProperty( 1079 ).TypedValue.DisplayValue
+<br />dDocumentDate = PropertyValues.SearchForProperty( 1002 ).TypedValue.Value
+<br />
+<br />
+<br />Output = szAgreementType & " - " & szCustomer & " (" & DatePart("m", dDocumentDate) & "/" & DatePart("yyyy", dDocumentDate) & ")"</code><br style="page-break-before:always" /><br style="page-break-before:always" /><h3>State Scripts</h3><br style="page-break-before:always" /><h3>Automatic State Transition Scripts</h3><br style="page-break-before:always" /><h3>MFCK Module Configuration</h3><h3>Metadata Card Configuration Rules</h3></body>
+</html>

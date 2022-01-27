@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE archive [
+	<!ENTITY prologue SYSTEM "Metadata\Prologue.xml">
+	<!ENTITY structure SYSTEM "Metadata\Structure.xml">
+	<!ENTITY vli_content1 SYSTEM "Metadata\VLI_Content1.xml">
+]>
+<archive guid="{68D274C7-8BEC-4491-A732-B2116B02ABBA}" version="5" build="21.10.10725.5" oldestcompatiblebuild="0.0.0.0">
+  <features>
+    <feature id="07C6C5D0-B6B8-4033-B563-86F7CBF89CFB" name="ParallelWorkflowStructure" pkgver="2" />
+    <feature id="19E9ED12-1AA6-46C5-8D79-AD353CA3BF63" name="ExternalGroupImportMode" pkgver="1" />
+    <feature id="4D00ED25-C6A1-42AB-8BBA-54CDA5821375" name="ManageWorkflows" pkgver="1" />
+    <feature id="5E4272D3-D870-45A8-9526-D6102ED7C246" name="PropertyDefFlags" pkgver="1" />
+    <feature id="6E328480-F5C5-4E0C-BD70-694A10156B5E" name="CompressedUISettings" pkgver="5" />
+    <feature id="70415128-1BB1-4A59-BE18-5B207135231A" name="RepositoryObjectLocation" pkgver="4" />
+    <feature id="7988B0D2-F330-4095-AD78-2F8643751FA8" name="ValueListItemChangeTimestamp" pkgver="1" />
+    <feature id="8D6F97C1-8E8F-469F-840A-3FA724922CB6" name="RepositoryObjectSource" pkgver="3" />
+    <feature id="C9D23648-C025-4538-B16B-86D90CBF5A50" name="RestrictedTransitionsOnly" pkgver="1" />
+    <feature id="CFA17B7A-A15C-4DFD-A623-BC702F1CB340" name="AllowObjectTypeAndPropertyDefAsGroupingLevel" pkgver="1" />
+    <feature id="DA7A4174-A872-4CBE-BCCE-27AF6E21E254" name="CustomDataForObjTypesAndPropDefs" pkgver="1" />
+    <feature id="DB876C6E-31F3-49A7-945F-E5709CBE04BA" name="IgnoreObjectACLsForSubfoldersListing" pkgver="1" />
+  </features>
+  <timestamp value="2021-11-13T08:56:59.010Z" />
+  <delta applied="false" />
+  <vault guid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" extendedmetadatadrivenpermissions="true" />
+  <statistics objectcount="0" vlitemcount="38" />
+  <flags>
+    <IgnoreChangesBefore />
+    <UseSearchFilter />
+  </flags>
+  <searchconds></searchconds>
+&prologue;
+&structure;
+&vli_content1;
+</archive>

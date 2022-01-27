@@ -1,0 +1,3310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<structure>
+  <capabilities value="536">
+    <DescribeContent value="8" />
+    <MapSemantics value="16" />
+    <DescribeStructure value="512" />
+  </capabilities>
+  <languages>
+    <language code="" id="0" name="Default language" />
+  </languages>
+  <objtypes>
+    <objtype aliases="" builtin="true" defaultpdid="1013" external="false" full="true" guid="{53F0C8FD-0BF0-47C4-8FA6-4C2D0DADB650}" id="0" name="Document" nameplural="Documents" namesingular="Document" ownerpdid="1012" realobj="true" translatable="false">
+      <flags value="139">
+        <CanHaveFiles value="1" />
+        <AllowAddingNewObjects value="2" />
+        <ShowCreationCommand value="8" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="17542" contenttype="ico" pathfrombase="Metadata\AdditionalData\ObjectTypes\0\Default.ico" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="false" full="true" guid="{6DDDA2B0-C470-47AB-AF7D-AA6C4462752C}" hierarchical="false" id="1" name="Classes" nameplural="Classes" namesingular="Class" ownerpdid="1001" realobj="false" translatable="true">
+      <flags value="0" />
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="false" full="true" guid="{4A190FFC-6A67-430A-8FA7-37BA2ED23D16}" hierarchical="false" id="2" name="Class groups" nameplural="Class groups" namesingular="Class group" ownerpdid="1002" realobj="false" translatable="true">
+      <flags value="0" />
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="false" full="true" guid="{2A8E89E0-4222-4104-8DF0-32309C208ABA}" hierarchical="false" id="3" name="Version labels" nameplural="Version labels" namesingular="Version label" ownerpdid="1005" realobj="false" translatable="true">
+      <flags value="130">
+        <AllowAddingNewObjects value="2" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <aclfornewobjs>
+        <cached id="aclcache-1-1" />
+      </aclfornewobjs>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="false" full="true" guid="{B0D8954E-3629-4F18-851E-ED56D464889A}" hierarchical="true" id="4" name="Traditional folders" nameplural="Traditional folders" namesingular="Traditional folder" ownerpdid="1006" realobj="false" translatable="false">
+      <flags value="130">
+        <AllowAddingNewObjects value="2" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <aclfornewobjs>
+        <cached id="aclcache-1-1" />
+      </aclfornewobjs>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{9C48DE49-2871-4FBA-906E-89007C17230D}" hierarchical="false" id="5" name="External sources" nameplural="External sources" namesingular="External source" ownerpdid="1007" realobj="false" translatable="true">
+      <flags value="132">
+        <External value="4" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{E396EBFC-5D0C-47A4-86A2-D27DAA479237}" hierarchical="false" id="6" name="Users" nameplural="Users" namesingular="User" ownerpdid="1003" realobj="false" translatable="false">
+      <flags value="4">
+        <External value="4" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{21B25F29-1B16-48EC-AD11-179F43CB3D84}" hierarchical="false" id="7" name="Workflows" nameplural="Workflows" namesingular="Workflow" ownerpdid="1008" realobj="false" translatable="true">
+      <flags value="4">
+        <External value="4" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{B2251216-28C4-4534-BBEA-41ECE38BE925}" hierarchical="false" id="8" name="States" nameplural="States" namesingular="State" ownerpdid="1009" realobj="false" translatable="true">
+      <owner id="7" name="Workflow" />
+      <flags value="4">
+        <External value="4" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" defaultpdid="1015" external="false" full="true" guid="{9DC32CA5-CC5B-493D-AF7C-B185CEAE7FDD}" id="9" name="Document collection" nameplural="Document collections" namesingular="Document collection" ownerpdid="1014" realobj="true" translatable="false">
+      <flags value="130">
+        <AllowAddingNewObjects value="2" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="17542" contenttype="ico" pathfrombase="Metadata\AdditionalData\ObjectTypes\9\Default.ico" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" defaultpdid="1017" external="false" full="true" guid="{55E1CA21-DE4D-4ED1-A1DD-5EC2E0597E8B}" id="10" name="Assignment" nameplural="Assignments" namesingular="Assignment" ownerpdid="1016" realobj="true" translatable="false">
+      <flags value="139">
+        <CanHaveFiles value="1" />
+        <AllowAddingNewObjects value="2" />
+        <ShowCreationCommand value="8" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="17542" contenttype="ico" pathfrombase="Metadata\AdditionalData\ObjectTypes\10\Default.ico" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" defaultpdid="1019" external="false" full="true" guid="{C48831CB-DD2B-49C2-89DD-936C2A8F4E7F}" id="15" name="Report" nameplural="Reports" namesingular="Report" ownerpdid="1018" realobj="true" translatable="false">
+      <flags value="130">
+        <AllowAddingNewObjects value="2" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="17542" contenttype="ico" pathfrombase="Metadata\AdditionalData\ObjectTypes\15\Default.ico" />
+      <acl>
+        <cached id="aclcache-6-2" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{EBD68D37-6412-483B-99E0-1FF31EA06AA7}" hierarchical="false" id="16" name="User groups" nameplural="User groups" namesingular="User group" ownerpdid="1004" realobj="false" translatable="true">
+      <flags value="4">
+        <External value="4" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="true" full="true" guid="{6B584E0A-0E55-44F2-9544-5BF534FE5339}" hierarchical="false" id="17" name="State transitions" nameplural="State transitions" namesingular="State transition" ownerpdid="1010" realobj="false" translatable="true">
+      <owner id="7" name="Workflow" />
+      <flags value="132">
+        <External value="4" />
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="true" vaultdb="true" />
+      <customdata />
+    </objtype>
+    <objtype aliases="" builtin="true" external="false" full="true" guid="{A7CAF1BB-2596-4875-AD17-D6A9641E52AA}" hierarchical="true" id="18" name="Sources" nameplural="Sources" namesingular="Source" ownerpdid="1011" realobj="false" translatable="false">
+      <flags value="128">
+        <DisallowAsGroupingLevel value="128" />
+      </flags>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-6-1" />
+      </acl>
+      <sorting ascending="true" type="ByDisplayName" />
+      <external value="false" />
+      <customdata />
+    </objtype>
+  </objtypes>
+  <propertydefs>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{DD7D6C1A-87EA-401C-A19D-B4219FD6F197}" id="1001" name="Owner (Class)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Class" otid="1">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A78E4B42-F22F-4C83-B3C2-4A467900F6F3}" id="1002" name="Owner (Class group)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Class group" otid="2">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{0652BAD9-FCF3-4F15-9F91-F9A8CA26844A}" id="1003" name="Owner (User)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{47B2DF36-5561-4F71-BE65-2A645171AAB5}" id="1004" name="Owner (User group)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="User group" otid="16">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A642FE2B-2215-4928-8C02-E5A5CC3ECC6E}" id="1005" name="Owner (Version label)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Version label" otid="3">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{0EE40B49-39F8-4807-B926-1F34E1A4A541}" id="1006" name="Owner (Traditional folder)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Traditional folder" otid="4">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{BE5AF076-46E5-4FB3-89D8-0ED41923433E}" id="1007" name="Owner (External source)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="External source" otid="5">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{6ADA5C22-DF6D-4991-9085-6AEE5E5699A1}" id="1008" name="Owner (Workflow)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Workflow" otid="7">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{F79DF5B0-7864-481C-9293-5C2F6E970A55}" id="1009" name="Owner (State)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="State" otid="8">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{D0C76715-A282-41F7-8F18-C2B260253DB1}" id="1010" name="Owner (State transition)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="State transition" otid="17">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{3D6D24AB-F83E-4A69-AD80-508568283F73}" id="1011" name="Owner (Source)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Source" otid="18">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{B11AEEA9-FA7E-4C1D-BB47-9C44A03E4B47}" id="1012" name="Owner (Document)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Document" otid="0">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A5D20BF0-3C70-413D-B463-4D17658792FB}" id="1013" name="Document" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="true" isowner="false" name="Document" otid="0">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="Auto" type="Filter" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{7C115E17-DE47-4FA4-A76A-A6B9E15FCCFF}" id="1014" name="Owner (Document collection)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Document collection" otid="9">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{44D02CBE-5A04-4157-B2DB-49C0E2E15190}" id="1015" name="Document collection" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="true" isowner="false" name="Document collection" otid="9">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="Auto" type="Filter" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{5D69456A-2C53-4A6A-88B1-947B1538F545}" id="1016" name="Owner (Assignment)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Assignment" otid="10">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{7B7DB5C6-EFBC-4260-9E0F-994F63752A5F}" id="1017" name="Assignment" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="true" isowner="false" name="Assignment" otid="10">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="Auto" type="Filter" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A613B17C-D09E-4F2B-90A4-9AF72FE9C8BB}" id="1018" name="Owner (Report)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="true" name="Report" otid="15">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{C753A0CA-5509-4224-91BC-AADE5114F18A}" id="1019" name="Report" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="true" isowner="false" name="Report" otid="15">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="Auto" type="Filter" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{3E2BB7EB-C49E-4C8C-825C-CAE0AEBA9A06}" id="0" name="Name or title" tip="" updatetype="Normal">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="false" full="true" guid="{EAB2B9D9-809E-49A5-9FA6-4EA5C2802F8C}" id="20" name="Created" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="false" full="true" guid="{EA3BBB33-C76F-4108-9331-14BEFB909515}" id="25" name="Created by" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="false" full="true" guid="{492A908E-02F7-47D1-9ECB-2C5D8F8D0142}" id="21" name="Last modified" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="false" full="true" guid="{63FC0676-A23A-4C1B-866C-7117D1B975D9}" id="23" name="Last modified by" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{D0661E73-9451-4F52-AFFB-DBD34452992E}" id="24" name="Status changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{3DCEC688-50C5-4796-9417-B0DDE5CFF3A8}" id="22" name="Single file" tip="" updatetype="ClientAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Boolean />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{CEBF9AC9-C60C-4240-9F50-723DBF3A5CA7}" id="100" name="Class" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="true" isconflict="false" isdefault="false" isowner="false" name="Class" otid="1">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{C6BECA16-3632-4D03-BE5F-E6B4A0D18738}" id="101" name="Class groups" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Class group" otid="2">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A35F2081-178E-4D2E-99A0-1D95475242E8}" id="27" name="Deleted" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{9080BE35-F22E-44DC-B957-F00ABBA384AD}" id="28" name="Deleted by" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{28AA66DF-2969-49AD-8F1F-AF3DFBC434CC}" id="29" name="Version label" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Version label" otid="3">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{D9BC5E8D-8006-423C-9832-CE095E36014A}" id="30" name="Size on server (this version)" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Integer />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{87926D43-342B-4804-9891-52BEC6E6DA2B}" id="31" name="Size on server (all versions)" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Integer />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{AE7DD3CE-55EE-4DE6-BE7E-0ABB433C6582}" id="32" name="Marked for archiving" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Boolean />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-2" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{1C72F729-4B87-47FD-841C-3499A92C6E15}" id="33" name="Comment" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiLineText />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{EDE25B27-FC55-4A1E-9307-06E23B59A781}" id="34" name="Traditional folder" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Traditional folder" otid="4">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{191B3ED0-67A2-4D3E-9F1D-6E3B76CE8F57}" id="35" name="Created from external source" tip="" updatetype="ServerAuto">
+      <flags value="3">
+        <ObjectsSearchable value="1" />
+        <HistoryVersionsOfObjectsSearchable value="2" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="External source" otid="5">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{4421716B-F56F-44C7-81AA-7F1919EBC456}" id="37" name="Is template" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Boolean />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{A032F2F2-4E81-4F1B-8F51-2B3A3F2DDAF4}" id="36" name="Additional classes" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Class" otid="1">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{C0FC7EB6-B9FD-4D4A-9ACA-E5B0B0F54304}" id="38" name="Workflow" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Workflow" otid="7">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{2A9D33A6-E923-411D-A68A-A4BBCB58033A}" id="39" name="State" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="State" otid="8">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="38" name="Workflow" type="Filter" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{EDF19D0D-53D7-4034-933C-5178E7AB01A0}" id="40" name="Moved into current state" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{89DBCD49-C6AC-4B91-B7D7-B0E6918D1A61}" id="41" name="Assignment description" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiLineText />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="false" full="true" guid="{6EC486B9-3C95-4006-A1AA-0BE83F153AAD}" id="42" name="Deadline" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Date />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{5C85E03D-99EA-4681-BDEB-8F4EF268FA43}" id="43" name="Monitored by" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{9BC2CAF4-2936-4B60-8B67-E7E6B935FB32}" id="44" name="Assigned to" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{CF7E481D-94FA-4ACC-B766-870D7950D6B6}" id="45" name="Marked as complete by" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{266912E8-8F96-4851-87BF-3AF8DA2A52C0}" id="46" name="Collection members (documents)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Document" otid="0">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Document collection" otid="9" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{BC773ADD-E3CB-4335-B9C5-3ECDBE36E4DC}" id="47" name="Collection members (document collections)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Document collection" otid="9">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Document collection" otid="9" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{B733BFB0-B598-4E5A-BEC6-40E344CB0BE2}" id="75" name="Original path (1/3)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{16F84521-910D-4F79-8EA9-2E8CEC470535}" id="77" name="Original path (2/3)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{68828689-0AC9-44CB-AFCD-CC375CA9D939}" id="78" name="Original path (3/3)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{6E88D201-1B85-43A0-8619-8A4B06FF0022}" id="76" name="Reference" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Document" otid="0">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Document" otid="0" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{2F7C720B-3B3F-43BD-9BEC-FCE8AE790309}" id="79" name="Workflow Assignment" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Assignment" otid="10">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{C0DC3A8F-C42B-48E3-869B-C3948B922B2B}" id="81" name="Accessed by me" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{FAECB41E-925D-4F52-AC11-5DBBCA02530D}" id="82" name="Favorite view" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Integer />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{6E38AAD4-F55B-4A30-868A-A8F8B9CC78F4}" id="83" name="Message ID" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{CCB62D4F-D6D8-4951-97EA-398AD2B54286}" id="84" name="Reply to (ID)" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{19E230F2-A6C0-4CE7-AFA9-F4849F7786B0}" id="85" name="Reply to" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Document" otid="0">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{416CDA30-4140-489A-BD19-49FB031CC675}" id="86" name="Signature manifestation" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiLineText />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-2" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{3EC6FCCC-B2C9-4313-B1B2-DC23660CD905}" id="87" name="Report URL" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Report" otid="15" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{4CEBEB58-9341-443E-934A-1478DFDF7782}" id="88" name="Report placement" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Integer />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Report" otid="15" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{4ED05F25-56AC-4673-9389-92184044B69C}" id="89" name="Object changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{DAA53380-1FDA-48A1-9D90-A8A246E89A69}" id="90" name="Permissions changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{51647C68-0083-45BA-BEAE-EDB86070E48F}" id="91" name="Version label changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{86D75BC1-00FC-4B04-9E0A-EA271B2237BF}" id="92" name="Version comment changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{E5686249-4C23-4D81-B590-944B4B720F29}" id="93" name="Deletion status changed" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{D84BE78A-0331-4360-BA6A-68105ED03A13}" id="96" name="Conflict resolved" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Timestamp />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{3F8C0E1F-1BFB-4408-AD84-2E663737D18D}" id="94" name="Remote vault GUID" tip="" updatetype="ClientAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{03D2D116-BCE2-484E-8070-87907F93E10E}" id="97" name="Marked as rejected by" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <MultiSelectLookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="User" otid="6">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </MultiSelectLookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="false" name="Assignment" otid="10" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{01EB37E2-CA4F-418A-8D46-84D97A9BF3B8}" id="102" name="Repository" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Source" otid="18">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="true" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{F42B3D91-D651-437E-BF11-B90A40EF1CE6}" id="103" name="Location" tip="" updatetype="ServerAuto">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Lookup allowautomaticpermissions="false" isconflict="false" isdefault="false" isowner="false" name="Source" otid="18">
+          <sorting ascending="true" type="ByDisplayName" />
+          <ownerpd id="None" type="None" />
+          <staticfilter />
+        </Lookup>
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+    <propertydef aliases="" builtin="false" controltype="Default" disallowasgroupinglevel="true" full="true" guid="{6DCCD5FA-0DBD-4C68-BBA5-2B219020B218}" id="26" name="Keywords" tip="" updatetype="Normal">
+      <flags value="1">
+        <ObjectsSearchable value="1" />
+      </flags>
+      <datatype>
+        <Text />
+      </datatype>
+      <icon bytes="0" />
+      <acl>
+        <cached id="aclcache-7-1" />
+      </acl>
+      <defaultvalue />
+      <automaticvalue calcorder="100" type="None">
+        <CalcWithPlaceholders active="false" value="" />
+        <CalcWithVBScript active="false" empty="true" />
+        <AutoNumberSimple active="false" value="1" />
+        <AutoNumberWithVBScript active="false" empty="true" />
+      </automaticvalue>
+      <objecttype all="true" />
+      <validation type="None">
+        <string />
+        <RegEx active="false" value="" />
+        <VBScript active="false" empty="true" />
+      </validation>
+      <formatting type="None" />
+      <customdata />
+    </propertydef>
+  </propertydefs>
+  <namedacls>
+    <namedacl aliases="" builtin="true" full="true" guid="{A470B682-2B52-48EF-B3A8-1A4B3F2B6B35}" id="-1" name="Full control for all internal users" type="Normal">
+      <aclfornacl>
+        <cached id="aclcache-9-1" />
+      </aclfornacl>
+      <content ignorelci="false">
+        <aclcomponent>
+          <ace id="-1">
+            <usersandgroups>
+              <group id="1" name="All internal users" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="Allowed" />
+              <changepermissions pos="3" value="Allowed" />
+              <delete pos="4" value="Allowed" />
+            </rights>
+          </ace>
+        </aclcomponent>
+      </content>
+    </namedacl>
+    <namedacl aliases="" builtin="true" full="true" guid="{75802B10-448C-4330-8EA1-99E412B69B61}" id="-5" name="Read access for external users, full control for internal users" type="Normal">
+      <aclfornacl>
+        <cached id="aclcache-9-2" />
+      </aclfornacl>
+      <content ignorelci="false">
+        <aclcomponent>
+          <ace id="-2">
+            <usersandgroups>
+              <group id="2" name="All internal and external users" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="NotDefined" />
+              <changepermissions pos="3" value="NotDefined" />
+              <delete pos="4" value="NotDefined" />
+            </rights>
+          </ace>
+          <ace id="-1">
+            <usersandgroups>
+              <group id="1" name="All internal users" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="Allowed" />
+              <changepermissions pos="3" value="Allowed" />
+              <delete pos="4" value="Allowed" />
+            </rights>
+          </ace>
+        </aclcomponent>
+      </content>
+    </namedacl>
+    <namedacl aliases="" builtin="true" full="true" guid="{8695D68C-0FBC-480F-A916-710413AFAB88}" id="-10" name="Read access for internal users, full control for me" type="Normal">
+      <aclfornacl>
+        <cached id="aclcache-9-2" />
+      </aclfornacl>
+      <content ignorelci="false">
+        <aclcomponent>
+          <ace id="-1">
+            <usersandgroups>
+              <group id="1" name="All internal users" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="NotDefined" />
+              <changepermissions pos="3" value="NotDefined" />
+              <delete pos="4" value="NotDefined" />
+            </rights>
+          </ace>
+          <ace id="0">
+            <usersandgroups>
+              <user id="0" name="" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="Allowed" />
+              <changepermissions pos="3" value="Allowed" />
+              <delete pos="4" value="Allowed" />
+            </rights>
+          </ace>
+        </aclcomponent>
+      </content>
+    </namedacl>
+    <namedacl aliases="" builtin="true" full="true" guid="{013B137C-35BD-4A9F-9360-4F03575ED5D5}" id="-20" name="Only for me" type="Normal">
+      <aclfornacl>
+        <cached id="aclcache-9-2" />
+      </aclfornacl>
+      <content ignorelci="false">
+        <aclcomponent>
+          <ace id="0">
+            <usersandgroups>
+              <user id="0" name="" />
+            </usersandgroups>
+            <rights>
+              <read pos="1" value="Allowed" />
+              <edit pos="2" value="Allowed" />
+              <changepermissions pos="3" value="Allowed" />
+              <delete pos="4" value="Allowed" />
+            </rights>
+          </ace>
+        </aclcomponent>
+      </content>
+    </namedacl>
+  </namedacls>
+  <classes>
+    <class aliases="" builtin="true" deleted="false" full="true" guid="{16D1D4AF-BB12-427C-A0CE-E47AA518165D}" id="1" name="Other document" otid="0" otname="Document">
+      <associatedproperties>
+        <property id="0" name="Name or title" required="true" />
+        <property id="26" name="Keywords" required="false" />
+        <property id="20" name="Created" required="true" />
+        <property id="25" name="Created by" required="true" />
+        <property id="21" name="Last modified" required="true" />
+        <property id="23" name="Last modified by" required="true" />
+        <property id="24" name="Status changed" required="true" />
+        <property id="89" name="Object changed" required="true" />
+        <property id="22" name="Single file" required="true" />
+        <property id="101" name="Class groups" required="false" />
+        <property id="30" name="Size on server (this version)" required="true" />
+        <property id="31" name="Size on server (all versions)" required="true" />
+        <property id="32" name="Marked for archiving" required="true" />
+      </associatedproperties>
+      <nameproperty id="0" />
+      <workflow forced="false" id="0" />
+      <acl>
+        <cached id="aclcache-2-1" />
+      </acl>
+    </class>
+    <class aliases="" builtin="true" deleted="false" full="true" guid="{7E8B0C06-2648-4DD2-BA5B-5F544E1B8622}" id="0" name="Document" otid="0" otname="Document">
+      <associatedproperties>
+        <property id="0" name="Name or title" required="true" />
+        <property id="26" name="Keywords" required="false" />
+        <property id="20" name="Created" required="true" />
+        <property id="25" name="Created by" required="true" />
+        <property id="21" name="Last modified" required="true" />
+        <property id="23" name="Last modified by" required="true" />
+        <property id="24" name="Status changed" required="true" />
+        <property id="89" name="Object changed" required="true" />
+        <property id="22" name="Single file" required="true" />
+        <property id="101" name="Class groups" required="false" />
+        <property id="30" name="Size on server (this version)" required="true" />
+        <property id="31" name="Size on server (all versions)" required="true" />
+        <property id="32" name="Marked for archiving" required="true" />
+      </associatedproperties>
+      <nameproperty id="0" />
+      <workflow forced="false" id="0" />
+      <acl>
+        <cached id="aclcache-2-1" />
+      </acl>
+    </class>
+    <class aliases="" builtin="true" deleted="false" full="true" guid="{79F7FFC3-6633-4B52-9E67-BCB7638DA379}" id="-100" name="Assignment" otid="10" otname="Assignment">
+      <associatedproperties>
+        <property id="0" name="Name or title" required="true" />
+        <property id="41" name="Assignment description" required="false" />
+        <property id="44" name="Assigned to" required="true" />
+        <property id="45" name="Marked as complete by" required="false" />
+        <property id="42" name="Deadline" required="false" />
+        <property id="43" name="Monitored by" required="false" />
+        <property id="20" name="Created" required="true" />
+        <property id="25" name="Created by" required="true" />
+        <property id="21" name="Last modified" required="true" />
+        <property id="23" name="Last modified by" required="true" />
+        <property id="24" name="Status changed" required="true" />
+        <property id="89" name="Object changed" required="true" />
+        <property id="22" name="Single file" required="true" />
+        <property id="101" name="Class groups" required="false" />
+        <property id="30" name="Size on server (this version)" required="true" />
+        <property id="31" name="Size on server (all versions)" required="true" />
+        <property id="32" name="Marked for archiving" required="true" />
+      </associatedproperties>
+      <nameproperty id="0" />
+      <workflow forced="false" id="0" />
+      <assignmentinfo completedbyany="false" type="Task">
+        <signatures>
+          <signature context="ClassCompletion" mode="Fixed" required="false" separate="true">
+            <manifestation pdid="-2" />
+            <reason />
+            <meaning />
+            <freeform pdid="-2" value="false" />
+            <additionalinfo />
+            <signatureid />
+          </signature>
+        </signatures>
+      </assignmentinfo>
+      <acl>
+        <cached id="aclcache-2-1" />
+      </acl>
+    </class>
+    <class aliases="" builtin="true" deleted="false" full="true" guid="{EF0577CB-2495-4716-BB3C-ACD57398E4C3}" id="-101" name="Report" otid="15" otname="Report">
+      <associatedproperties>
+        <property id="0" name="Name or title" required="true" />
+        <property id="87" name="Report URL" required="false" />
+        <property id="20" name="Created" required="true" />
+        <property id="25" name="Created by" required="true" />
+        <property id="21" name="Last modified" required="true" />
+        <property id="23" name="Last modified by" required="true" />
+        <property id="24" name="Status changed" required="true" />
+        <property id="89" name="Object changed" required="true" />
+        <property id="22" name="Single file" required="true" />
+        <property id="101" name="Class groups" required="false" />
+        <property id="30" name="Size on server (this version)" required="true" />
+        <property id="31" name="Size on server (all versions)" required="true" />
+        <property id="32" name="Marked for archiving" required="true" />
+      </associatedproperties>
+      <nameproperty id="0" />
+      <workflow forced="false" id="0" />
+      <acl>
+        <cached id="aclcache-2-1" />
+      </acl>
+    </class>
+  </classes>
+  <classgroups />
+  <workflows />
+  <states />
+  <transitions />
+  <useraccounts>
+    <user deleted="false" full="true" guid="{2D3E2652-1CB4-41FD-B636-065EDAD1614D}" id="1" loginname="LTVICTOR3\victo" name="LTVICTOR3\victo" pseudo="false" vaultlanguage="0">
+      <vaultroles value="3079">
+        <FullControl value="1" />
+        <LogIn value="2" />
+        <CreateDocs value="4" />
+        <InternalUser value="1024" />
+        <ManageTraditionalFolders value="2048" />
+      </vaultroles>
+      <acl>
+        <cached id="aclcache-10-1" />
+      </acl>
+      <login accounttype="Windows" licensetype="NamedUser">
+        <domain>LTVICTOR3</domain>
+        <username>victo</username>
+        <fullname>Victor Vogelpoel-WORK</fullname>
+        <email>victor.vogelpoel@theone.nl</email>
+        <serverroles value="9">
+          <SystemAdministrator value="1" />
+          <LogIn value="8" />
+        </serverroles>
+      </login>
+    </user>
+    <user deleted="false" guid="{0ED90608-95EF-406F-9A4F-1D1664912578}" id="-103" name="(current user and users for whom the current user is a substitute)" />
+    <user deleted="false" guid="{BA1BCA7E-026B-4260-9D73-2AE593052F6C}" id="-100" name="(current user)" />
+  </useraccounts>
+  <usergroups>
+    <group aliases="" deleted="false" externalname="" full="true" guid="{9E126FBA-9FE2-4867-A1DF-B256436893AB}" id="1" name="All internal users">
+      <members />
+      <acl>
+        <cached id="aclcache-11-1" />
+      </acl>
+      <external externalgroupimportmode="Undefined" licensetypefornewaccounts="None" membershipsync="false" value="false">
+        <externalname />
+        <organizationalunit />
+      </external>
+    </group>
+    <group aliases="" deleted="false" externalname="" full="true" guid="{C0038C58-FF9F-4D1B-80D9-407831486D35}" id="2" name="All internal and external users">
+      <members />
+      <acl>
+        <cached id="aclcache-11-1" />
+      </acl>
+      <external externalgroupimportmode="Undefined" licensetypefornewaccounts="None" membershipsync="false" value="false">
+        <externalname />
+        <organizationalunit />
+      </external>
+    </group>
+  </usergroups>
+  <viewdefs>
+    <view aliases="By Class" category="Normal" changedat="2021-09-16T15:01:55.290Z" common="true" deleted="false" full="true" guid="{20AD739E-E095-4914-BBAE-C0892000EBDC}" id="2" name="By Class" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="true" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="1" referfromviewlevel="false" showempty="false" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <TypedValueExpr otid="1" parentchildbehavior="None" type="Lookup">
+                <dfcall type="None" />
+              </TypedValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+        </levels>
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="ID2" category="Normal" changedat="2021-09-16T15:01:55.290Z" common="true" deleted="false" full="true" guid="{06D5B299-1D81-4733-8121-9B000F187758}" id="12" name="ID2" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="false" createchildviewsinui="false" delete="false" edit="false" />
+      <searchdef>
+        <flags value="1">
+          <LookInAllVersions value="1" />
+        </flags>
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="ObjectFlags">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="ContainsAnyBitwise" />
+            <typedvalue datatype="Integer" empty="false">81</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="1" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="OriginalVaultGUID">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="2" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="OriginalObjectType">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="3" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="OriginalObjectIDSegment">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="4" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="OriginalObjectID">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="5" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="LatestOrSpecific">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="6" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="VersionID">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+        </levels>
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="ID" category="Normal" changedat="2021-09-16T15:01:55.300Z" common="true" deleted="false" full="true" guid="{6B1CE3AE-82F8-4FBA-B183-C4FB31784C7A}" id="18" name="ID" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="false" createchildviewsinui="false" delete="false" edit="false" />
+      <searchdef>
+        <flags value="1">
+          <LookInAllVersions value="1" />
+        </flags>
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="ObjectFlags">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="ContainsAnyBitwise" />
+            <typedvalue datatype="Integer" empty="false">81</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="1" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="ObjectType">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="2" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <IDSegmentExpr segmentsize="1000" />
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="3" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="ID">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="4" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="LatestOrSpecific">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="5" referfromviewlevel="false" showempty="true" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <StatusValueExpr type="VersionID">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+        </levels>
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Checked Out to Me" category="Normal" changedat="2021-09-16T15:01:55.300Z" common="true" deleted="false" full="true" guid="{BE3B45BA-33A8-4A31-823D-2E9A79ABDFA6}" id="5" name="Checked Out to Me" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="false" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="CheckedOutTo">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Lookup" empty="false">(current user)<lookup deleted="false" id="-100" value="(current user)" version="-1" /></typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <StatusValueExpr type="ObjectFlags">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="ContainsAnyBitwise" />
+            <typedvalue datatype="Integer" empty="false">81</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Recently Modified by Me" category="Normal" changedat="2021-09-16T15:01:55.300Z" common="true" deleted="false" full="true" guid="{11438650-7E72-4530-8063-AC909CBB44D9}" id="7" name="Recently Modified by Me" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="true" edit="true" />
+      <searchdef>
+        <flags value="3">
+          <LookInAllVersions value="1" />
+          <ReturnLatestVisibleVersion value="2" />
+        </flags>
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="21">
+                <dfcall type="DaysFrom" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="LessThan" />
+            <typedvalue datatype="Integer" empty="false">30</typedvalue>
+          </searchcond>
+          <searchcond pos="3">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="23">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Lookup" empty="false">(current user)<lookup deleted="false" id="-100" value="(current user)" version="-1" /></typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Recently Accessed by Me" category="Normal" changedat="2021-09-16T15:01:55.300Z" common="true" deleted="false" full="true" guid="{DBF002F5-0A3A-4838-9B6D-95EB4C40F52A}" id="14" name="Recently Accessed by Me" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="false" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="81">
+                <dfcall type="DaysFrom" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="LessThan" />
+            <typedvalue datatype="Integer" empty="false">30</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Favorites" category="Normal" changedat="2021-09-16T15:01:55.310Z" common="true" deleted="false" full="true" guid="{BD94FBC3-3B52-4AD1-B641-3A080D8550AC}" id="15" name="Favorites" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="false" createchildviewsinui="false" delete="false" edit="false" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="82">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Integer" empty="false">15</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Assigned to Me" category="Normal" changedat="2021-09-16T15:01:55.310Z" common="true" deleted="false" full="true" guid="{41BE71A6-B0C1-40E0-94EC-9C5FA6931A52}" id="9" name="Assigned to Me" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="false" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="44">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Lookup" empty="false">(current user and users for whom the current user is a substitute)<lookup deleted="false" id="-103" value="(current user and users for whom the current user is a substitute)" version="-1" /></typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Built-in" category="FilterOnly" changedat="2021-09-16T15:01:55.320Z" common="true" deleted="false" full="true" guid="{DCBD793D-5103-452C-AB1B-EA5DF7E1F52B}" id="13" name="Built-in" type="FilterOnly" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="false" createchildviewsinui="true" delete="false" edit="false" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds />
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Reports (built-in)" category="Normal" changedat="2021-09-16T15:01:55.320Z" common="true" deleted="false" full="true" guid="{B78C8E0F-040C-4A56-B2BC-FF71C2D674A0}" id="16" name="Reports (built-in)" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="false" edit="false" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="ObjectType">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Lookup" empty="false">Report<lookup deleted="false" extidstatus="Unknown" id="15" value="Report" version="-1" /></typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Conflicts" category="Normal" changedat="2021-09-16T15:01:55.320Z" common="true" deleted="false" full="true" guid="{84BB77DF-28B2-47A7-A9F9-A5488CCF62E1}" id="17" name="Conflicts" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="false" edit="false" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="ObjectFlags">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="ContainsAnyBitwise" />
+            <typedvalue datatype="Integer" empty="false">16</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels />
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-1" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="Templates" category="Normal" changedat="2021-09-16T15:01:55.310Z" common="true" deleted="false" full="true" guid="{A3C95DA7-0DFE-4A84-B1D0-AA1D3CC95B30}" id="8" name="Templates" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="true" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+          <searchcond pos="2">
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="37">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">true</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="1" referfromviewlevel="false" showempty="false" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <TypedValueExpr otid="1" parentchildbehavior="None" type="Lookup">
+                <dfcall type="None" />
+              </TypedValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+        </levels>
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-2" />
+      </acl>
+      <uisettings />
+    </view>
+    <view aliases="By Workflow and State" category="Normal" changedat="2021-09-16T15:01:55.320Z" common="true" deleted="false" full="true" guid="{CE1D7019-94DC-41AC-AE40-F38B2B69FCBF}" id="10" name="By Workflow and State" type="Normal" visible="true">
+      <flags value="0" />
+      <allowedoperations copyinui="true" createchildviewsinui="true" delete="true" edit="true" />
+      <searchdef>
+        <flags value="0" />
+        <searchconds>
+          <searchcond pos="1">
+            <expression>
+              <StatusValueExpr type="Deleted">
+                <dfcall type="None" />
+              </StatusValueExpr>
+            </expression>
+            <condition type="Equal" />
+            <typedvalue datatype="Boolean" empty="false">false</typedvalue>
+          </searchcond>
+        </searchconds>
+        <levels>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="1" referfromviewlevel="false" showempty="false" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="38">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+          <level algorithm="None" nullfoldername="" objecttypetogroupby="-2" pos="2" referfromviewlevel="false" showempty="false" showjit="false" showmatchingobjects="false" shownull="false" shownullcontents="false">
+            <searchconds />
+            <expression>
+              <PropertyValueExpr parentchildbehavior="None" pdid="39">
+                <dfcall type="None" />
+              </PropertyValueExpr>
+            </expression>
+            <flags value="0" />
+          </level>
+        </levels>
+      </searchdef>
+      <parent value="false" />
+      <acl>
+        <cached id="aclcache-12-2" />
+      </acl>
+      <uisettings />
+    </view>
+  </viewdefs>
+  <eventhandlers>
+    <eventhandler active="true" aliases="VaultExtensionMethod::VaultapplicationReportToEventlogWithSerilog.MFEventHandlerVaultExtensionMethod" full="true" guid="{EDCF0612-BB1E-4E21-9DFF-D60A9815404D}" id="2293760" index="0" name="VaultapplicationReportToEventlogWithSerilog.MFEventHandlerVaultExtensionMethod" type="VaultExtensionMethod">
+      <script contenttype="vbs" pathfrombase="Metadata\AdditionalData\VaultEventHandlers\VaultExtensionMethod\2293760.vbs" />
+    </eventhandler>
+    <eventhandler active="true" aliases="BeforeCheckInChangesFinalize::VaultapplicationReportToEventlogWithSerilog.MFEventHandlerBeforeCheckInChangesFinalize" full="true" guid="{BD29E4CB-D8F1-43C0-ABA6-0163449EEC3E}" id="4390912" index="0" name="VaultapplicationReportToEventlogWithSerilog.MFEventHandlerBeforeCheckInChangesFinalize" type="BeforeCheckInChangesFinalize">
+      <script contenttype="vbs" pathfrombase="Metadata\AdditionalData\VaultEventHandlers\BeforeCheckInChangesFinalize\4390912.vbs" />
+    </eventhandler>
+  </eventhandlers>
+<prologue xml:space="preserve">
+  <aclcache>
+    <acl id="aclcache-1-1" ignorelci="false">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="NotDefined" />
+            <changepermissions pos="3" value="NotDefined" />
+            <delete pos="4" value="NotDefined" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-2-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <attachobjects pos="5" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-6-2">
+      <aclcomponent />
+    </acl>
+    <acl id="aclcache-6-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="NotDefined" />
+          </rights>
+        </ace>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-7-2">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <edit pos="2" value="Denied" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-7-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-9-2">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-9-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-10-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-11-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-12-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-12-2">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+  </aclcache>
+</prologue><content xml:space="preserve">
+  <capabilities value="0" />
+</content><vaultinfo name="practical-m-files" guid="{316EE0B8-8752-40CB-A03D-22B9F647B521}" sqlengine="Firebird" sqlserver="localhost" filedatalocation="MFFileDataStorageDefault" language="eng" /></structure>

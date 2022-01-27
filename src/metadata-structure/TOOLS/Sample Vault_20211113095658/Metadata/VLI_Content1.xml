@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content xml:space="preserve">
+  <capabilities value="0" />
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{862254E3-AFB3-41FF-B337-4A597ACE4CF3}" id="4" otid="3" otname="Version label" value="Published">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="4" otid="3" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{E8DB0ED5-4B2F-4E58-AF0C-A7A6F492FDBE}" id="5" otid="3" otname="Version label" value="Delivered to the customer">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="5" otid="3" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{FBA39BCD-4B34-4FAB-B6A6-66F7709049CD}" id="1" otid="104" otname="Meeting type" value="Board meeting">
+    <automaticacl candeactivate="false" usesownacl="false">
+      <namedacl aliases="" builtin="false" guid="{10766586-91E2-447F-8553-AD207A22181A}" id="1" name="Visible to company management only" type="Normal" />
+    </automaticacl>
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{A98A65FA-F8F8-4B9E-ACDE-671D750AB214}" id="2" otid="104" otname="Meeting type" value="General meeting">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{971359AD-A81A-442E-8F2E-6E26601A250F}" id="3" otid="104" otname="Meeting type" value="Project meeting">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{064B60EB-EE5F-46DD-AA4C-17BCF1903B32}" id="6" otid="104" otname="Meeting type" value="Marketing meeting">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="6" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{4BE79FB4-136A-4588-ABE9-A47436FE2812}" id="7" otid="104" otname="Meeting type" value="Staff meeting">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="7" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{05457097-9A80-4878-9A86-12C494B69F71}" id="8" otid="104" otname="Meeting type" value="Other meeting">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="8" otid="104" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="2020-07-16T11:49:50.234Z" deleted="true" deletedat="2020-07-16T11:49:50.234Z" extidstatus="Internal" guid="{CD5B6137-99AA-4C8F-874C-101EA5815B16}" id="9" otid="104" otname="Meeting type" value="New Item">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="9" otid="104" vaultguid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{75509576-FFB4-41BA-95C2-123641890788}" id="1" otid="154" otname="Country" value="USA">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{D76ECD60-8789-4160-BB4E-5BEF77ACD3F6}" id="2" otid="154" otname="Country" value="Canada">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{C1C5576F-E90B-4785-A904-410BCB3945A1}" id="3" otid="154" otname="Country" value="United Kingdom">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{C28E32DB-3D34-4681-BD7D-F0743152BB6E}" id="4" otid="154" otname="Country" value="Germany">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="4" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{B32AB147-EEF5-414A-ACD8-3C6E33EDCB50}" id="5" otid="154" otname="Country" value="France">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="5" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{41D3327F-2AB0-4405-AFC7-9E7F39B09D43}" id="6" otid="154" otname="Country" value="China">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="6" otid="154" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{B90039B0-80BD-41F7-85D8-B3D0713F02E6}" id="1" otid="155" otname="Job opening" value="Sales Assistant / November 2004">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="155" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{A29509F5-E8DE-4DE9-95BA-3C38AF2D5568}" id="2" otid="155" otname="Job opening" value="Software Engineer / March 2007">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="155" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{3F6BD5E1-F454-46A4-AE08-0AC25BE1ED69}" id="3" otid="155" otname="Job opening" value="Software Engineer / May 2005">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="155" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{91AC2DB7-95BC-4493-8A48-3BB38E9ABEEB}" id="1" otid="157" otname="Drawing type" value="Architectural">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="157" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{C7F76CDE-FA8D-4AE0-9548-3C5EA902077E}" id="2" otid="157" otname="Drawing type" value="Electrical">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="157" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{9860E9A8-C0A9-43C2-B616-EA0BB4D0F019}" id="3" otid="157" otname="Drawing type" value="Mechanical">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="157" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{009AE189-89A9-4DB1-96BC-5073B2D54FFE}" id="4" otid="157" otname="Drawing type" value="Structural">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="4" otid="157" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{85A30222-A14B-4231-A7E9-A1BED5C15EEA}" id="5" otid="157" otname="Drawing type" value="Services">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="5" otid="157" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{39B40B35-1009-4D7D-A3F0-40AB9B2E1ECB}" id="1" otid="158" otname="Department" value="Sales">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="158" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{BACA187F-44D1-491F-A5EF-55E24F1E8FA1}" id="2" otid="158" otname="Department" value="Administration">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="158" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{40C6BE33-8434-4F0E-9406-F6F6348A9233}" id="3" otid="158" otname="Department" value="Production">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="158" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{97D1E44F-A1C5-4483-93B8-10BF182BEC53}" id="4" otid="158" otname="Department" value="Marketing">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="4" otid="158" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="2020-08-19T13:19:09.897Z" deleted="true" deletedat="2020-08-19T13:19:09.897Z" extidstatus="Internal" guid="{8DB79712-88F4-4EE6-89B0-F9903931B366}" id="5" otid="158" otname="Department" value="IT">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="5" otid="158" vaultguid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" />
+  </vlitem>
+  <vlitem changedat="2020-08-26T21:17:08.128Z" deleted="false" extidstatus="Internal" guid="{18B883F9-A4A3-4EB5-AFFA-5DF0F1733FF9}" id="6" otid="158" otname="Department" value="IT">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="6" otid="158" vaultguid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" />
+  </vlitem>
+  <vlitem changedat="2020-08-26T21:20:09.878Z" deleted="false" extidstatus="Internal" guid="{85C6541B-A333-44B1-9D35-5064F2D1A85C}" id="7" otid="158" otname="Department" value="IT">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="7" otid="158" vaultguid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" />
+  </vlitem>
+  <vlitem changedat="2020-08-26T21:20:44.457Z" deleted="false" extidstatus="Internal" guid="{723FEA95-549F-4154-B94E-C9AE853295F5}" id="8" otid="158" otname="Department" value="IT">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="8" otid="158" vaultguid="{B48A27F9-F7FC-4641-A405-DE7FABA85EE2}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{732DD3B7-B862-4FAE-AA03-4EE7E3225BFC}" id="1" otid="159" otname="Report type" value="Audit Report">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="159" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{43E656C3-1119-45A4-AF63-D905B287E021}" id="2" otid="159" otname="Report type" value="Risk Analysis">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="159" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{B056715E-00AE-4B17-A2A4-CB554C93998D}" id="3" otid="159" otname="Report type" value="Progress Report">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="159" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{D5D42569-3F2D-4D68-A43B-9515D367A58F}" id="1" otid="160" otname="Agreement type" value="Non-disclosure Agreement">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="1" otid="160" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{0747A7E0-93E1-4F0A-83F1-37CF170A2562}" id="2" otid="160" otname="Agreement type" value="Project Agreement">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="2" otid="160" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{FE4EAA67-C600-46F5-A63B-6A1E0541D3BA}" id="3" otid="160" otname="Agreement type" value="Subcontracting Agreement">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="3" otid="160" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+  <vlitem changedat="1601-01-01T00:00:00.000Z" deleted="false" extidstatus="Internal" guid="{4E5AD36C-F953-4829-B6DE-639F0CBFB6A9}" id="4" otid="160" otname="Agreement type" value="Reseller Agreement">
+    <acl>
+      <cached id="aclcache-13-1" />
+    </acl>
+    <originalidentity id="4" otid="160" vaultguid="{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}" />
+  </vlitem>
+</content>

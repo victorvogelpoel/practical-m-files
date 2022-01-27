@@ -1,0 +1,159 @@
+body
+{
+    font-family: Calibri;
+    font-size: 13px;
+}
+
+td, th {
+    border: 1px solid #5B9BD5;
+    padding: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+h1 {
+    font-family: Calibri;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #5B9BD5;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.quote {
+    font-style: italic;
+    color: gray;
+    margin-left: 20px;
+}
+
+ul.userlist {
+    margin-top: -7px;
+    margin-bottom: 4px;
+}
+
+tr:nth-child(odd) { background: #F2F2F2; }
+tr th {
+    background: #5B9BD5;
+    color: #ffffff;
+}
+
+td.name {
+    font-weight: bold;
+    border-left: 0;
+}
+
+td.aliases {
+    font-size: 10px;
+}
+
+.green {
+    color: green;
+}
+
+.usergroup {
+    color: purple;
+}
+
+.user {
+    color: #00b16b;
+}
+
+.pseudouser {
+    color: #1c49a5;
+}
+
+.red {
+    color: red;
+}
+
+td {
+    max-width: 330px;
+}
+
+    td.wide {
+        max-width: 500px;
+    }
+
+.center {
+    text-align: center;
+}
+
+img.icon {
+    width: 20px;
+}
+
+font.highlight {
+    font-style: italic;
+}
+
+p.small {
+    font-size: 11px;
+    color: gray;
+    margin-top: 5px;
+}
+
+h2 img.icon,
+h3 img.icon,
+h4 img.icon,
+h5 img.icon,
+h6 img.icon {
+    margin-right: 10px;
+}
+
+h5 {
+    margin: 5px 0;
+}
+
+h6 {
+    margin: 5px 0;
+}
+td.icon {
+    border-right: 0;
+}
+
+p.TOC {
+    font-size: 18px;
+}
+
+p.title {
+    font-family: Calibri;
+    font-size: 50px;
+    text-align:center;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+p.subtitle {
+    font-family: Calibri;
+    font-size: 40px;
+    text-align:center;
+    margin-top: 50px;
+}
+
+img.vaulticon {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-right: 50px;
+}

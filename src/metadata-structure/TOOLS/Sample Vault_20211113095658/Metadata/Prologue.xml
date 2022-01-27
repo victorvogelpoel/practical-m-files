@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prologue xml:space="preserve">
+  <aclcache>
+    <acl id="aclcache-1-2" ignorelci="false">
+      <aclcomponent>
+        <ace id="-102">
+          <usersandgroups>
+            <group id="102" name="Managers" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-1" ignorelci="false">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="NotDefined" />
+            <changepermissions pos="3" value="NotDefined" />
+            <delete pos="4" value="NotDefined" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-3" ignorelci="false">
+      <aclcomponent>
+        <namedacl aliases="" builtin="true" guid="{A470B682-2B52-48EF-B3A8-1A4B3F2B6B35}" id="-1" name="Full control for all internal users" type="Normal" />
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-4" ignorelci="false">
+      <aclcomponent>
+        <ace id="PD25">
+          <pseudouserelements>
+            <pseudouserelement id="25" name="Created by" pos="1" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-7" ignorelci="false">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="NotDefined" />
+            <changepermissions pos="3" value="NotDefined" />
+            <delete pos="4" value="NotDefined" />
+          </rights>
+        </ace>
+        <ace id="PD25">
+          <pseudouserelements>
+            <pseudouserelement id="25" name="Created by" pos="1" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-5" ignorelci="false">
+      <aclcomponent>
+        <ace id="PD25">
+          <pseudouserelements>
+            <pseudouserelement id="25" name="Created by" pos="1" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="PD1141PD1134">
+          <pseudouserelements>
+            <pseudouserelement id="1141" name="Owner" pos="1" type="PropertyDef" />
+            <pseudouserelement id="1134" name="M-Files user" pos="2" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-1-6" ignorelci="false">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="NotDefined" />
+            <changepermissions pos="3" value="NotDefined" />
+            <delete pos="4" value="NotDefined" />
+          </rights>
+        </ace>
+        <ace id="PD25">
+          <pseudouserelements>
+            <pseudouserelement id="25" name="Created by" pos="1" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="PD1141PD1134">
+          <pseudouserelements>
+            <pseudouserelement id="1141" name="Owner" pos="1" type="PropertyDef" />
+            <pseudouserelement id="1134" name="M-Files user" pos="2" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <read pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+            <changepermissions pos="3" value="Allowed" />
+            <delete pos="4" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-2-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <attachobjects pos="5" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-3-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-4-2">
+      <aclcomponent />
+    </acl>
+    <acl id="aclcache-4-3">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <movein pos="1" value="Allowed" />
+            <moveout pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-4-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <movein pos="1" value="Allowed" />
+            <moveout pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-5-6">
+      <aclcomponent />
+    </acl>
+    <acl id="aclcache-5-3">
+      <aclcomponent>
+        <ace id="-102">
+          <usersandgroups>
+            <group id="102" name="Managers" />
+          </usersandgroups>
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-5-2">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-5-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-5-4">
+      <aclcomponent>
+        <ace id="-102">
+          <usersandgroups>
+            <group id="102" name="Managers" />
+          </usersandgroups>
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="29">
+          <usersandgroups>
+            <user id="29" name="Kimberley Miller" />
+          </usersandgroups>
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-5-5">
+      <aclcomponent>
+        <ace id="PD1141PD1134">
+          <pseudouserelements>
+            <pseudouserelement id="1141" name="Owner" pos="1" type="PropertyDef" />
+            <pseudouserelement id="1134" name="M-Files user" pos="2" type="PropertyDef" />
+          </pseudouserelements>
+          <usersandgroups />
+          <rights>
+            <transition pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-6-2">
+      <aclcomponent />
+    </acl>
+    <acl id="aclcache-6-5">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="NotDefined" />
+          </rights>
+        </ace>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-6-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="NotDefined" />
+          </rights>
+        </ace>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-6-4">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-6-3">
+      <aclcomponent>
+        <ace id="-107">
+          <usersandgroups>
+            <group id="107" name="HR Department" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="-102">
+          <usersandgroups>
+            <group id="102" name="Managers" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="Allowed" />
+          </rights>
+        </ace>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <seename pos="1" value="Allowed" />
+            <addvalues pos="2" value="NotDefined" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-7-3">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-7-2">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <edit pos="2" value="Denied" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-7-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+            <edit pos="2" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-9-2">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-9-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-10-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-11-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-11-2">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-12-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-12-2">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-13-1">
+      <aclcomponent>
+        <ace id="-1">
+          <usersandgroups>
+            <group id="1" name="All internal users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+    <acl id="aclcache-14-1">
+      <aclcomponent>
+        <ace id="-2">
+          <usersandgroups>
+            <group id="2" name="All internal and external users" />
+          </usersandgroups>
+          <rights>
+            <see pos="1" value="Allowed" />
+          </rights>
+        </ace>
+      </aclcomponent>
+    </acl>
+  </aclcache>
+</prologue>
