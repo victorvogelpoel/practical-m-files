@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MFiles.VAF">
-      <Version>2.3.623.2</Version>
+      <Version>2.3.623.6</Version>
     </PackageReference>
     <PackageReference Include="MSBuildTasks">
       <Version>1.5.0.235</Version>
