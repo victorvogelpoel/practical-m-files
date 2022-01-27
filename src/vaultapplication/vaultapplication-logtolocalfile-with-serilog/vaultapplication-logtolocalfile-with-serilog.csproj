@@ -67,17 +67,8 @@
     <None Include="vaultapplication-logtolocalfile-with-serilog.licenseheader" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Interop.MFilesAPI">
-      <Version>21.8.1</Version>
-    </PackageReference>
-    <PackageReference Include="MFiles.Crypto">
-      <Version>21.8.1</Version>
-    </PackageReference>
     <PackageReference Include="MFiles.VAF">
-      <Version>2.3.623.2</Version>
-    </PackageReference>
-    <PackageReference Include="MFiles.VAF.Configuration">
-      <Version>21.8.1</Version>
+      <Version>2.3.623.6</Version>
     </PackageReference>
     <PackageReference Include="MSBuildTasks">
       <Version>1.5.0.235</Version>
