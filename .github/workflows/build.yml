@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     timeout-minutes: 15
-    runs-on: 'windows-latest'
+    runs-on: 'windows-2019'
     strategy:
       matrix: 
         solution: [
