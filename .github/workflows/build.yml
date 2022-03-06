@@ -12,13 +12,15 @@ jobs:
     strategy:
       matrix: 
         solution: [
+        'src\logging\console-logtomfilesobject-with-serilog\console-logtomfilesobject-with-serilog.sln',
+        'src\logging\vaultapplication-logtolocalfile-with-serilog\vaultapplication-logtolocalfile-with-serilog.sln',
+        'src\logging\vaultapplication-logtomfilesobject-with-serilog\vaultapplication-logtomfilesobject-with-serilog.sln',
+        'src\logging\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln',
+        'src\logging\vaultapplication-reporttoeventlog-with-serilog\vaultapplication-reporttoeventlog-with-serilog.sln',
         'src\metadata-structure\metadata-structure-code-generation-t4\code-generation-t4.sln',
         'src\vaultapplication\vaultapplication-cleanarch\vaultapplication-cleanarch.sln',
-        'src\vaultapplication\vaultapplication-logtolocalfile-with-serilog\vaultapplication-logtolocalfile-with-serilog.sln',
-        'src\vaultapplication\vaultapplication-logtomsteams-with-serilog\vaultapplication-logtomsteams-with-serilog.sln',
         'src\vaultapplication\vaultapplication-mediatr\vaultapplication-mediatr.sln',
         'src\vaultapplication\vaultapplication-net48\vaultapplication-net48.sln',
-        'src\vaultapplication\vaultapplication-reporttoeventlog-with-serilog\vaultapplication-reporttoeventlog-with-serilog.sln',
         'src\vaultapplication\vaultapplication-unittestable-usecase\vaultapplication-unittestable-usecase.sln'
         ]
 
