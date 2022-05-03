@@ -143,7 +143,7 @@ namespace VaultapplicationLogtoMFilesObjectWithSerilog
         /// </summary>
         /// <param name="oldConfiguration"></param>
         /// <param name="updateExternals"></param>
-        protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool updateExternals)
+        protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool isValid, bool updateExternals)
         {
             if (oldConfiguration?.LoggingConfiguration?.LogLevel != Configuration?.LoggingConfiguration?.LogLevel)
             {
@@ -151,6 +151,8 @@ namespace VaultapplicationLogtoMFilesObjectWithSerilog
 
                 Log.Information("Admin changed Log level to {LogLevel}", Configuration?.LoggingConfiguration?.LogLevel);
             }
+
+            base.OnConfigurationUpdated(oldConfiguration, isValid, updateExternals);
         }
 
 
