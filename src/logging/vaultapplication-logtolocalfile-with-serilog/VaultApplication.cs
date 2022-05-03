@@ -89,7 +89,7 @@ namespace VaultApplicationLogToLocalFileWithSerilog
         /// </summary>
         /// <param name="oldConfiguration"></param>
         /// <param name="updateExternals"></param>
-        protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool updateExternals)
+        protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool isValid, bool updateExternals)
         {
             if (oldConfiguration.LogLevel != Configuration.LogLevel)
             {
@@ -97,6 +97,8 @@ namespace VaultApplicationLogToLocalFileWithSerilog
 
                 Log.Information("Log level changed to {LogLevel}", Configuration.LogLevel);
             }
+
+            base.OnConfigurationUpdated(oldConfiguration, isValid, updateExternals);
         }
 
 
